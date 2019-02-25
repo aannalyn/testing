@@ -1,0 +1,517 @@
+/* 
+ * Reset
+ ********************************************************************************/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E4E4E4;
+    color: #7F7F7F;
+}
+
+
+
+
+
+
+/* 
+ * Overwrite Vendors
+ ********************************************************************************/
+.modal-backdrop {
+    background-color: #1FADAB;
+}
+
+
+
+
+
+/* 
+ * Colors
+ ********************************************************************************/
+.pda-primary-text { color: #1FADAB; }
+
+.pda-primary-bg { background-color: #1FADAB; }
+
+
+
+/* 
+ * Buttons
+ ********************************************************************************/
+.btn-primary.pda-btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active { 
+    background-color: #1FADAB;
+    border-color: #1FADAB;
+}
+.btn-primary.pda-btn-primary:hover { 
+    background-color: #1b9593;
+    border-color:  #1b9593;
+}
+
+
+
+
+/* 
+ * Icons
+ ********************************************************************************/
+.pda-icons {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pda-icons.pda-icon-nav { 
+    background-image: url('../images/global/icons/nav.svg'); 
+    width: 24px;
+    height: 24px;
+}
+
+.pda-icons.pda-about { 
+    background-position: 0 -48px; 
+}
+.pda-icons.pda-venue { 
+    background-position: 0 -144px; 
+}
+.pda-icons.pda-program { 
+    background-position: 0 -240px; 
+}
+.pda-icons.pda-speakers { 
+    background-position: 0 -335px; 
+}
+.pda-icons.pda-evaluation { 
+    background-position: 0 -432px; 
+}
+.pda-icons.pda-more-horiz { 
+    background-position: 0 -479px; 
+}
+
+@media only screen and (min-width: 769px) {
+    .pda-icons.pda-icon-nav { 
+        width: 32px;
+        height: 32px;
+    }
+
+    .pda-icons.pda-about { 
+        background-position: 0 -32px; 
+    }
+    .pda-icons.pda-venue { 
+        background-position: 0 -96px; 
+    }
+    .pda-icons.pda-program { 
+        background-position: 0 -160px; 
+    }
+    .pda-icons.pda-speakers { 
+        background-position: 0 -224px; 
+    }
+    .pda-icons.pda-evaluation { 
+        background-position: 0 -288px; 
+    }
+    .pda-icons.pda-more-horiz { 
+        background-position: 0 -319px; 
+    }
+}
+
+
+
+
+
+/* 
+ * Layout
+ ********************************************************************************/
+.pda-main-container {   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF url(../images/global/bg1.png) no-repeat bottom right;
+    background-size: contain; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    padding-left: 0;
+}
+
+.pda-content {
+    height: 100vh;
+}
+
+.page-heading {
+    color: #1FADAB;
+}
+
+.program-page__content {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 769px) { 
+    .pda-main-container {
+        padding-top: 0;
+        padding-left: 87px;
+    }
+}
+@media only screen and (min-width: 1367px) { 
+    .pda-main-container {
+        width: 1200px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+/* 
+ * Sidebar
+ ********************************************************************************/
+.sidebar-nav {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    background-color: #F7F7F7;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: inherit;
+    font-size: 0;
+    padding: 0 0.75rem;
+}
+
+.sidebar-nav .nav {
+    display: none;
+    font-size: 1rem;
+}
+
+.sidebar-brand {
+    display: block;
+}
+.sidebar-brand-logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+.nav-link {
+    color: #1FADAB;
+    padding: 1rem 0;
+}
+
+
+.nav-link:focus {
+    background-color: #7ACBC5;
+    color: #FFFFFF;
+}
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #1FADAB;
+}
+
+.nav-link.active {
+    background-color: #7ACBC5;
+}
+
+/* .sidebar-nav .nav-link.active::after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid green;
+} */
+
+.nav-link.active .pda-icons.pda-about { 
+    background-position: 0 0; 
+}
+.nav-link.active .pda-icons.pda-venue { 
+    background-position: 0 -64px; 
+}
+.nav-link.active .pda-icons.pda-program { 
+    background-position: 0 -128px; 
+}
+.nav-link.active .pda-icons.pda-speakers { 
+    background-position: 0 -192px; 
+}
+.nav-link.active .pda-icons.pda-evaluation { 
+    background-position: 0 -256px; 
+}
+.nav-link.active .pda-icons.pda-more-horiz { 
+    background-position: 0 -320px; 
+}
+
+.nav-label {
+    text-transform: uppercase;
+}
+.nav-link.active .nav-label {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 769px) {
+    .sidebar-nav {
+        height: 100vh;
+        width: 87px;
+        text-align: center;
+        padding: 2rem 0;
+        line-height: normal;
+    }
+
+    .sidebar-nav .nav {
+        display: block;
+    }
+
+    .sidebar-brand {
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-brand-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .sidebar-nav .nav-link {
+        padding: 1rem 0;
+    }
+
+    .nav-label {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .sidebar-brand {
+        margin-bottom: 1rem;
+    }
+
+    .nav-label {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+    .sidebar-nav {
+        left: initial;
+        margin-left: -87px;
+    }
+}
+
+
+
+
+/* 
+ * Main Page
+ ********************************************************************************/
+.main-page__content {
+    
+}
+
+.main-heading {
+    color: #304C95;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 769px) {
+    .main-page__content {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+    .main-page__content {
+        padding: 3rem;
+    }
+}
+
+
+
+
+/* 
+ * About Page
+ ********************************************************************************/
+.about-page__content {
+    padding: 1rem;
+}
+
+.about-page__content img {
+    width: 110px;
+    height: 110px;
+}
+
+@media only screen and (min-width: 769px) {
+    .about-page__content {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+    .about-page__content {
+        padding: 3rem;
+    }
+}
+
+
+
+/* 
+ * Speakers Page
+ ********************************************************************************/
+.speakers-page__content {
+    padding: 1rem 0;
+}
+
+.speakers {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.speaker {
+    padding: 1rem;
+}
+.speaker span { color: #828282; }
+
+.speaker-photo {
+    width: 90px;
+    height: 90px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.speaker-link {
+    color: inherit;
+}
+
+.speaker-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 769px) {
+    .speakers-page__content {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+    .speakers-page__content {
+        padding: 3rem;
+    }
+}
+
+
+
+/* 
+ * Program Page
+ ********************************************************************************/
+.program-page__content {
+    padding: 1rem 0;
+}
+
+.program-dates {
+    font-size: 1rem;
+    color: #1FADAB;
+    text-transform: uppercase;
+    padding-left: 7px;
+}
+
+.nav-tabs.program-nav-tabs {
+    border-bottom: 3px solid #1FADAB;
+    padding: 0 7px;
+}
+
+.nav-tabs.program-nav-tabs .nav-item.program-nav-item {
+    margin-bottom: 0;
+}
+
+.nav-link.program-nav-link {
+    background-color: #EFF0F2;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 8px;
+    margin: 0 2px;
+}
+.nav-link.program-nav-link.active {
+    background-color: #1FADAB;
+    color: #FFFFFF;
+    border-color: #1FADAB;
+    border-bottom-color: #7ACBC5;
+    padding: 8px 0;
+}
+
+
+@media only screen and (min-width: 769px) {
+    .program-page__content {
+        padding: 3rem 0;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+
+}
+
+
+
+/* 
+ * Evaluation Page
+ ********************************************************************************/
+.pda-login-form {
+    padding: 2rem 2.5rem 5rem;
+    border: 1px solid #707070;
+    box-shadow: 0 3px 6px rgba(112, 112, 112, 0.16);
+    border-radius: 25px;
+}
+.pda-login-form h4 {
+    color: #304C95;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+.pda-login-form .pda-form-logo {
+    width: 180px;
+    height: 180px;
+}
+.pda-login-form .form-control {
+    color: #1FADAB;
+    width: 300px;
+    border: none;
+}
+
+
+.pda-login-form .form-control::-webkit-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control:-moz-placeholder { 
+   color: #1FADAB; 
+   opacity: 1;
+}
+.pda-login-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #1FADAB;
+   opacity: 1;
+}
+.pda-login-form .form-control:-ms-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control::-ms-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control::placeholder { color: #1FADAB; }
+
+
+.pda-login-form .btn.btn-login {
+    background-color: #FFFFFF;
+    color: #1FADAB;
+    width: 150px;
+}
+.pda-login-form .btn.btn-login:hover {
+    background-color: #F1F1F1;
+}
+.pda-login-form .form-control,
+.pda-login-form .btn.btn-login {
+    box-shadow: 0 2px 6px rgba(0, 0, 3, 0.16);
+}
+
+/* 
+ * Venue Page
+ ********************************************************************************/
+.btn.btn-view-direction {
+    width: 160px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
