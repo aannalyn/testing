@@ -84,6 +84,13 @@ body {
     background-position: 0 -479px; 
 }
 
+.pda-icons.menu {
+    background-image: url('../images/global/menu.svg');
+    background-position: 0 0;
+    width: 24px;
+    height: 24px;
+}
+
 @media only screen and (min-width: 769px) {
     .pda-icons.pda-icon-nav { 
         width: 32px;
