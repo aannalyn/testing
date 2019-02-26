@@ -27,7 +27,6 @@ body {
  * Colors
  ********************************************************************************/
 .pda-primary-text { color: #1FADAB; }
-
 .pda-primary-bg { background-color: #1FADAB; }
 
 
@@ -59,8 +58,8 @@ body {
     background-size: cover;
 }
 
-.pda-icon.pda-icon-nav { 
-    background-image: url('../images/global/icons/nav.svg'); 
+.pda-icon.pda-icon-global { 
+    background-image: url('../images/global/icons/icons.svg'); 
     width: 32px;
     height: 32px;
 }
@@ -84,6 +83,7 @@ body {
     background-position: 0 -319px; 
 }
 
+
 .pda-icon.menu {
     background-image: url('../images/global/menu.svg');
     background-position: 0 0;
@@ -92,7 +92,7 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-    .pda-icon.pda-icon-nav { 
+    .pda-icon.pda-icon-global { 
         width: 32px;
         height: 32px;
     }
@@ -120,6 +120,71 @@ body {
 
 
 
+/* 
+ * Modal
+ ********************************************************************************/
+.modal-header.pda-modal-header {
+    min-height: 117px;
+    border-bottom: none;
+}
+
+.modal-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover .modal-close-btn .overlay {
+    border-left-color: #1c9d9b;
+}
+
+.modal-close-btn .pda-icon-global.pda-close-white-16 {
+    background-position: 0 -175px; 
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.modal-close-btn .overlay {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+    border-left: 33px solid #1FADAB;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.modal-content.pda-modal-content {
+    font-family: Oswald;
+    font-size: 13px;
+    color: #828282;
+    border: none;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, .16);
+}
+
+.modal-footer.pda-modal-footer {
+    border-top-color: transparent;
+    padding: 8px;
+    justify-content: center;
+}
+
+.modal-footer.pda-modal-footer .btn-back {
+    width: 100px;
+    font-size: 14px;
+}
+
 
 /* 
  * Layout
@@ -127,21 +192,25 @@ body {
 .pda-main-container {   
     position: relative;
     width: 100%;
-    height: 100vh;
-    background: #FFFFFF url(../images/global/bg1.png) no-repeat bottom right;
+    height: auto;
+    min-height: 100vh;
+    background: #FFFFFF url(../images/global/bg1.png) no-repeat fixed bottom right;
     background-size: contain; 
     margin-left: auto;
     margin-right: auto;
     padding-top: 65px;
     padding-left: 0;
+    overflow-y: auto;
 }
 
 .pda-content {
-    height: 100vh;
+    min-height: calc(100vh - 65px);
+    height: auto;
 }
 
 .page-heading {
     color: #1FADAB;
+    text-align: center;
 }
 
 .program-page__content {
@@ -153,6 +222,10 @@ body {
     .pda-main-container {
         padding-top: 0;
         padding-left: 87px;
+    }
+    
+    .page-heading {
+        text-align: left;
     }
 }
 @media only screen and (min-width: 1367px) { 
@@ -343,7 +416,7 @@ body {
  ********************************************************************************/
 
 .main-page__content {
-    
+
 }
 
 .main-heading {
@@ -382,18 +455,49 @@ body {
 /* 
  * About Page
  ********************************************************************************/
+.pda-container .about-page__content {
+    height: auto;
+    min-height: 0;
+}
+
 .about-page__content {
     padding: 1rem;
 }
 
-.about-page__content img {
+.pda-photo {
     width: 110px;
     height: 110px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.doc-photo {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 @media only screen and (min-width: 769px) {
     .about-page__content {
         padding: 3rem 2rem;
+    }
+
+    .doc-photo {
+        width: 397px;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .about-page__content {
+        padding: 3rem 250px 3rem 2rem;
+    }
+
+    .doc-photo {
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -420,6 +524,7 @@ body {
 
 .speaker {
     padding: 1rem;
+    width: 50%;
 }
 .speaker span { color: #828282; }
 
@@ -432,6 +537,7 @@ body {
 
 .speaker-link {
     color: inherit;
+    font-family: Oswald;
 }
 
 .speaker-link:hover {
@@ -439,9 +545,47 @@ body {
     color: inherit;
 }
 
+.pda-modal-header-summary {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: auto;
+    padding-left: 95px;
+    width: 90%;
+}
+
+.pda-modal-header-summary img {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 84px;
+    height: 84px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.pda-modal-header-summary > div h4 {
+    display: inline-block;
+    color: #1FADAB;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.pda-modal-header-summary hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top-color: #1FADAB;
+}
+
 @media only screen and (min-width: 769px) {
     .speakers-page__content {
         padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .speaker {
+        width: 33.33%;
     }
 }
 
