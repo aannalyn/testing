@@ -1,0 +1,51 @@
+.pda-container .about-page__content {
+    height: auto;
+    min-height: 0;
+}
+
+.about-page__content {
+    padding: 1rem;
+}
+
+.pda-photo {
+    width: 110px;
+    height: 110px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.doc-photo {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+@media only screen and (min-width: 769px) {
+    .about-page__content {
+        padding: 3rem 2rem;
+    }
+
+    .doc-photo {
+        width: 397px;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .about-page__content {
+        padding: 3rem 250px 3rem 2rem;
+    }
+
+    .doc-photo {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 1367px) { 
+    .about-page__content {
+        padding: 3rem;
+    }
+}
