@@ -140,17 +140,19 @@
     text-align: center;
     font-size: 0;
     font-family: Oswald;
+    padding: 1rem;
 }
 
 .speaker-item {
    display: inline-block;
    font-size: 14px;
    margin: 5px;
-   width: 90%;
+   width: 80%;
 }
 
 .speaker-item-body {
     padding-left: 90px;
+    text-align: left;
 }
 
 .speaker-item-photo {
@@ -193,9 +195,12 @@
     padding: 3px 10px;
 }
 
+
+
+
 @media only screen and (min-width: 577px) {
     .speaker-item {
-        width: 60%;
+        width: calc(60% - 10px);
     }
 }
 
@@ -215,6 +220,12 @@
     }
 
     .speaker-item {
-        width: auto;
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .speaker-item {
+        width: calc(33.33% - 10px);
     }
 }

@@ -272,6 +272,7 @@ body {
     text-align: inherit;
     font-size: 0;
     padding: 0 0.75rem;
+    z-index: 5;
 }
 
 @media only screen and (min-width: 769px) {
