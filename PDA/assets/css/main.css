@@ -19,6 +19,9 @@ body {
     background-color: #1FADAB;
 }
 
+.text-danger {
+    color: #FF0000!important;
+}
 
 
 
@@ -28,6 +31,7 @@ body {
  ********************************************************************************/
 .pda-primary-text { color: #1FADAB; }
 .pda-primary-bg { background-color: #1FADAB; }
+.pda-tertiary-bg { background-color: #304C95; }
 
 
 
@@ -42,6 +46,16 @@ body {
 .btn-primary.pda-btn-primary:hover { 
     background-color: #1b9593;
     border-color:  #1b9593;
+}
+
+.btn-primary.pda-btn-tertiary,
+.btn-primary:not(:disabled):not(.disabled):active { 
+    background-color: #304C95;
+    border-color: #304C95;
+}
+.btn-primary.pda-btn-tertiary:hover { 
+    background-color: #273f7c;
+    border-color:  #273f7c;
 }
 
 
@@ -176,12 +190,11 @@ body {
 
 .modal-footer.pda-modal-footer {
     border-top-color: transparent;
-    padding: 8px;
     justify-content: center;
 }
 
 .modal-footer.pda-modal-footer .btn-back {
-    width: 100px;
+    width: 125px;
     font-size: 14px;
 }
 
@@ -685,58 +698,7 @@ body {
 
 
 
-/* 
- * Evaluation Page
- ********************************************************************************/
-.pda-login-form {
-    padding: 2rem 2.5rem 5rem;
-    border: 1px solid #707070;
-    box-shadow: 0 3px 6px rgba(112, 112, 112, 0.16);
-    border-radius: 25px;
-}
-.pda-login-form h4 {
-    color: #304C95;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-}
-.pda-login-form .pda-form-logo {
-    width: 180px;
-    height: 180px;
-}
-.pda-login-form .form-control {
-    color: #1FADAB;
-    width: 300px;
-    border: none;
-}
 
-
-.pda-login-form .form-control::-webkit-input-placeholder { color: #1FADAB; }
-.pda-login-form .form-control:-moz-placeholder { 
-   color: #1FADAB; 
-   opacity: 1;
-}
-.pda-login-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #1FADAB;
-   opacity: 1;
-}
-.pda-login-form .form-control:-ms-input-placeholder { color: #1FADAB; }
-.pda-login-form .form-control::-ms-input-placeholder { color: #1FADAB; }
-.pda-login-form .form-control::placeholder { color: #1FADAB; }
-
-
-.pda-login-form .btn.btn-login {
-    background-color: #FFFFFF;
-    color: #1FADAB;
-    width: 150px;
-}
-.pda-login-form .btn.btn-login:hover {
-    background-color: #F1F1F1;
-}
-.pda-login-form .form-control,
-.pda-login-form .btn.btn-login {
-    box-shadow: 0 2px 6px rgba(0, 0, 3, 0.16);
-}
 
 /* 
  * Venue Page

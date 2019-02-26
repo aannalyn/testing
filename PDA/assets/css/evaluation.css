@@ -1,0 +1,203 @@
+/* Icons */
+.evaluation-menu .pda-icon-evaluation {
+    width: 32px;
+    height: 32px;
+}
+
+.emoticon .pda-icon-evaluation {
+    width: 50px;
+    height: 50px;
+}
+
+
+.pda-icon.pda-icon-evaluation { 
+    background-image: url('../images/pages/evaluation/icons.svg');
+}
+
+.pda-icon.pda-ideas { background-position: 0 0; }
+.pda-icon.pda-presented { background-position: 0 -32px; }
+.pda-icon.pda-contents { background-position: 0 -64px; }
+.pda-icon.pda-speaking { background-position: 0 -96px; }
+.pda-icon.pda-visual-aids { background-position: 0 -128px; }
+.pda-icon.pda-rating-1 { background-position: 0 -250px; }
+.pda-icon.pda-rating-2 { background-position: 0 -300px; }
+.pda-icon.pda-rating-3 { background-position: 0 -350px; }
+.pda-icon.pda-rating-4 { background-position: 0 -400px; }
+.pda-icon.pda-rating-5 { background-position: 0 -450px; }
+.pda-icon.pda-icon-star { background-position: 0 -365px; }
+
+.evaluation-menus {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.evaluation-menu {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: #1FADAB;
+    display: inline-block;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.evaluation-title {
+    text-transform: uppercase;
+    color: #1FADAB;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.emoticons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.emoticon {
+    display: inline-block;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.emoticon-star {
+    display: block;
+}
+
+.pda-login-form {
+    padding: 2rem 2.5rem 5rem;
+    border-radius: 25px;
+}
+.pda-login-form h4 {
+    color: #304C95;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+.pda-login-form .pda-form-logo {
+    width: 120px;
+    height: 120px;
+}
+.pda-login-form .form-control {
+    color: #1FADAB;
+    width: 300px;
+    border: none;
+}
+
+.pda-login-form .form-control::-webkit-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control:-moz-placeholder { 
+   color: #1FADAB; 
+   opacity: 1;
+}
+.pda-login-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #1FADAB;
+   opacity: 1;
+}
+.pda-login-form .form-control:-ms-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control::-ms-input-placeholder { color: #1FADAB; }
+.pda-login-form .form-control::placeholder { color: #1FADAB; }
+
+
+.pda-login-form .btn.btn-login {
+    background-color: #FFFFFF;
+    color: #1FADAB;
+    width: 150px;
+}
+.pda-login-form .btn.btn-login:hover {
+    background-color: #F1F1F1;
+}
+.pda-login-form .form-control,
+.pda-login-form .btn.btn-login {
+    box-shadow: 0 2px 6px rgba(0, 0, 3, 0.16);
+}
+
+.speaker-list {
+    text-align: center;
+    font-size: 0;
+    font-family: Oswald;
+}
+
+.speaker-item {
+   display: inline-block;
+   font-size: 14px;
+   margin: 5px;
+   width: 90%;
+}
+
+.speaker-item-body {
+    padding-left: 90px;
+}
+
+.speaker-item-photo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.speaker-item-title,
+.speaker-item-position {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.speaker-item-title h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1FADAB;
+    display: inline-block;
+    margin: 0;
+}
+
+.btn-primary.pda-btn-primary.btn-evaluate {
+    width: 130px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+/* Modal */
+.modal-footer.pda-modal-footer button {
+    border-radius: 15px;
+    padding: 3px 10px;
+}
+
+@media only screen and (min-width: 577px) {
+    .speaker-item {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .pda-login-form {
+        border: 1px solid #707070;
+        box-shadow: 0 3px 6px rgba(112, 112, 112, 0.16);
+    }
+
+    .pda-login-form h4 {
+        font-size: 1.3rem;
+    }
+
+    .pda-login-form .pda-form-logo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .speaker-item {
+        width: auto;
+    }
+}

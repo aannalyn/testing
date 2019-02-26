@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./assets/vendors/bootstrap-4.3.1/css/bootstrap.min.css">
     <link href="./assets/css/fonts/roboto.css" rel="stylesheet">
     <link href="./assets/css/fonts/oswald.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/evaluation.css">
 </head>
 <body>
 
@@ -56,23 +57,113 @@
         </nav>
 
         <div class="pda-content evaluation-page__content d-flex justify-content-center align-items-center">
-            <form class="pda-login-form text-center">
+            <form class="pda-login-form text-center d-none">
                 <h4>Philippine Dental Association</h4>
                 <img src="./assets/images/global/icons/pda-logo.svg" alt="PDA Logo" class="pda-form-logo mb-4">
                 <div class="form-group">
                     <input type="text" class="form-control" id="prc-no" aria-describedby="prcNo" placeholder="PRC No">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="prc-pass" aria-describedby="prcPass" placeholder="password">
+                    <input type="password" class="form-control" id="prc-pass" aria-describedby="prcPass" placeholder="Password">
                 </div>
                 <button type="button" class="btn btn-login text-uppercase">Login</button>
+
+                <p class="text-uppercase text-danger mt-5">* Invalid PRC Number</p>
             </form>
+
+            <div class="speaker-list">
+                <div class="speaker-item">
+                    <div class="card speaker-item-card">
+                        <div class="card-body speaker-item-body">
+                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                            <div class="speaker-item-title">
+                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                            </div>
+                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                            <hr>
+                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-item">
+                    <div class="card speaker-item-card">
+                        <div class="card-body speaker-item-body">
+                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                            <div class="speaker-item-title">
+                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                            </div>
+                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                            <hr>
+                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-item">
+                    <div class="card speaker-item-card">
+                        <div class="card-body speaker-item-body">
+                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                            <div class="speaker-item-title">
+                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                            </div>
+                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                            <hr>
+                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade pda-modal" id="speakerEvaluationModal" tabindex="-1" role="dialog" aria-labelledby="speakerEvaluationTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content pda-modal-content">
+                <div class="modal-header pda-modal-header">
+                    <div class="pda-modal-header-summary">
+                        <img src="./assets/images/pages/speakers/avatar-man.svg" alt="Profile Photo">
+                        <div>
+                            <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                        </div>
+                        <div>PEDIATRIC DENTIST</div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="modal-body pda-modal-body">
+                    <ul class="evaluation-menus">
+                        <li class="evaluation-menu"><i class="pda-icon pda-icon-evaluation pda-ideas"></i></li>
+                        <li class="evaluation-menu"><i class="pda-icon pda-icon-evaluation pda-presented"></i></li>
+                        <li class="evaluation-menu"><i class="pda-icon pda-icon-evaluation pda-contents"></i></li>
+                        <li class="evaluation-menu"><i class="pda-icon pda-icon-evaluation pda-speaking"></i></li>
+                        <li class="evaluation-menu"><i class="pda-icon pda-icon-evaluation pda-visual-aids"></i></li>
+                    </ul>
+
+                    <h4 class="evaluation-title">Express Ideas Clearly</h4>
+                    <ul class="emoticons">
+                        <li class="emoticon">
+                            <i class="pda-icon pda-icon-evaluation pda-rating-1"></i>
+                            <!-- <div class="emoticon-star"><i class="pda-icon pda-icon-evaluation pda-icon-star"></i></div> -->
+                        </li>
+                        <li class="emoticon"><i class="pda-icon pda-icon-evaluation pda-rating-2"></i></li>
+                        <li class="emoticon"><i class="pda-icon pda-icon-evaluation pda-rating-3"></i></li>
+                        <li class="emoticon"><i class="pda-icon pda-icon-evaluation pda-rating-4"></i></li>
+                        <li class="emoticon"><i class="pda-icon pda-icon-evaluation pda-rating-5"></i></li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer pda-modal-footer">
+                    <button type="button" class="btn btn-primary pda-btn-tertiary text-uppercase btn-back" data-dismiss="modal">Previous</button>
+                    <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-back" data-dismiss="modal">Skip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./assets/vendors/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/evaluation.js"></script>
 </body>
 </html>
