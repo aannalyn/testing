@@ -604,6 +604,43 @@ body {
     padding: 1rem 0;
 }
 
+.program-schedule .page-heading {
+    margin: 0;
+}
+
+.schedule-range-label {
+    margin: 0;
+    font-weight: 500;
+}
+
+.schedule-list {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.schedule-item {
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    display: inline-block;
+    background: url('../images/pages/program/day.svg') no-repeat center;
+    text-align: center;
+    color: #1FADAB;
+    font-family: Oswald;
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.schedule-item:hover {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
 .program-dates {
     font-size: 1rem;
     color: #1FADAB;
