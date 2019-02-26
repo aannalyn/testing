@@ -1,14 +1,13 @@
 /* Icons */
-.evaluation-menu .pda-icon-evaluation {
+.pda-icon-32 {
     width: 32px;
     height: 32px;
 }
 
-.emoticon .pda-icon-evaluation {
+.pda-icon-50 {
     width: 50px;
     height: 50px;
 }
-
 
 .pda-icon.pda-icon-evaluation { 
     background-image: url('../images/pages/evaluation/icons.svg');
@@ -26,6 +25,9 @@
 .pda-icon.pda-rating-5 { background-position: 0 -450px; }
 .pda-icon.pda-icon-star { background-position: 0 -365px; }
 
+
+
+/* Evaluation Menus */
 .evaluation-menus {
     margin: 0;
     padding: 0;
@@ -35,16 +37,23 @@
 }
 
 .evaluation-menu {
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px;
+}
+
+.evaluation-btn {
     width: 60px;
     height: 60px;
     line-height: 60px;
     text-align: center;
-    font-size: 14px;
     border-radius: 50%;
-    background-color: #1FADAB;
-    display: inline-block;
-    margin: 6px;
+    background-color: #D3D3D3;
     cursor: pointer;
+}
+
+.evaluation-menu.active .evaluation-btn {
+    background-color: #1FADAB;
 }
 
 .evaluation-title {
@@ -55,6 +64,9 @@
     margin: 1rem 0;
 }
 
+
+
+/* Emoticons */
 .emoticons {
     margin: 0;
     padding: 0;
@@ -72,6 +84,8 @@
     display: block;
 }
 
+
+/* Form */
 .pda-login-form {
     padding: 2rem 2.5rem 5rem;
     border-radius: 25px;
