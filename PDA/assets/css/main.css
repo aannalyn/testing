@@ -642,18 +642,3 @@ body {
 @media only screen and (min-width: 1367px) { 
 
 }
-
-
-
-
-
-/* 
- * Venue Page
- ********************************************************************************/
-.btn.btn-view-direction {
-    width: 160px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-}
