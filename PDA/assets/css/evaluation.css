@@ -101,7 +101,7 @@
 
 /* Form */
 .pda-login-form {
-    padding: 2rem 2.5rem 5rem;
+    padding: 2rem 2.5rem 3rem;
     border-radius: 25px;
 }
 .pda-login-form h4 {
@@ -164,6 +164,10 @@
 .speaker-item-body {
     padding-left: 90px;
     text-align: left;
+}
+
+.card.speaker-item-card {
+    border-radius: 13px;
 }
 
 .speaker-item-photo {
@@ -240,3 +244,12 @@
         width: calc(33.33% - 10px);
     }
 }
+
+
+
+/* Feedback Form */
+.feedback-form textarea {
+    resize: none;
+    border-radius: 14px;
+    color: #828282;
+}   

@@ -164,7 +164,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15px;
+    right: 12px;
 }
 
 .modal-close-btn .overlay {
@@ -193,7 +193,7 @@ body {
     justify-content: center;
 }
 
-.modal-footer.pda-modal-footer .btn-back {
+.modal-footer.pda-modal-footer button {
     width: 125px;
     font-size: 14px;
 }

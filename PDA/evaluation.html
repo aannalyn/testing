@@ -57,7 +57,7 @@
         </nav>
 
         <div class="pda-content evaluation-page__content d-flex justify-content-center align-items-center">
-            <form class="pda-login-form text-center d-none">
+            <form class="pda-login-form text-center">
                 <h4>Philippine Dental Association</h4>
                 <img src="./assets/images/global/icons/pda-logo.svg" alt="PDA Logo" class="pda-form-logo mb-4">
                 <div class="form-group">
@@ -71,47 +71,52 @@
                 <p class="text-uppercase text-danger mt-5">* Invalid PRC Number</p>
             </form>
 
-            <div class="speaker-list">
-                <div class="speaker-item">
-                    <div class="card speaker-item-card">
-                        <div class="card-body speaker-item-body">
-                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
-                            <div class="speaker-item-title">
-                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+            <div class="speakers-wrapper d-none">
+                <h3 class="page-heading text-uppercase">Evaluation</h3>
+                <div class="speaker-list">
+                    <div class="speaker-item">
+                        <div class="card speaker-item-card">
+                            <div class="card-body speaker-item-body">
+                                <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                                <div class="speaker-item-title">
+                                    <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                                </div>
+                                <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                                <hr>
+                                <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                             </div>
-                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
-                            <hr>
-                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                         </div>
                     </div>
-                </div>
-                <div class="speaker-item">
-                    <div class="card speaker-item-card">
-                        <div class="card-body speaker-item-body">
-                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
-                            <div class="speaker-item-title">
-                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                    <div class="speaker-item">
+                        <div class="card speaker-item-card">
+                            <div class="card-body speaker-item-body">
+                                <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                                <div class="speaker-item-title">
+                                    <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                                </div>
+                                <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                                <hr>
+                                <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                             </div>
-                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
-                            <hr>
-                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                         </div>
                     </div>
-                </div>
-                <div class="speaker-item">
-                    <div class="card speaker-item-card">
-                        <div class="card-body speaker-item-body">
-                            <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
-                            <div class="speaker-item-title">
-                                <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                    <div class="speaker-item">
+                        <div class="card speaker-item-card">
+                            <div class="card-body speaker-item-body">
+                                <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo" class="speaker-item-photo">
+                                <div class="speaker-item-title">
+                                    <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                                </div>
+                                <div class="speaker-item-position">PEDIATRIC DENTIST</div>
+                                <hr>
+                                <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                             </div>
-                            <div class="speaker-item-position">PEDIATRIC DENTIST</div>
-                            <hr>
-                            <button type="button" class="btn btn-primary pda-btn-primary btn-evaluate" data-toggle="modal" data-target="#speakerEvaluationModal">Evaluate</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 
@@ -121,7 +126,7 @@
             <div class="modal-content pda-modal-content">
                 <div class="modal-header pda-modal-header">
                     <div class="pda-modal-header-summary">
-                        <img src="./assets/images/pages/speakers/avatar-man.svg" alt="Profile Photo">
+                        <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo">
                         <div>
                             <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
                         </div>
@@ -195,6 +200,38 @@
                 <div class="modal-footer pda-modal-footer">
                     <button type="button" class="btn btn-primary pda-btn-tertiary text-uppercase btn-back" data-dismiss="modal">Previous</button>
                     <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-back" data-dismiss="modal">Skip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade pda-modal" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content pda-modal-content">
+                <div class="modal-header pda-modal-header">
+                    <div class="pda-modal-header-summary">
+                        <img src="./assets/images/dummy/dummy-profile.svg" alt="Profile Photo">
+                        <div>
+                            <h4>Ma. Cristina</h4> Lagaya-Estrada DDM
+                        </div>
+                        <div>PEDIATRIC DENTIST</div>
+                        <hr>
+                    </div>
+                    <div class="modal-close-btn" data-dismiss="modal">
+                        <div class="overlay"></div>
+                        <i class="pda-icon pda-icon-global pda-close-white-16"></i>
+                    </div>
+                </div>
+                <div class="modal-body pda-modal-body">
+                    <form class="feedback-form">
+                        <div class="form-group">
+                          <textarea class="form-control" id="feedback-field" rows="8" placeholder="Say something about..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer pda-modal-footer">
+                    <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-save" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-cancel" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
