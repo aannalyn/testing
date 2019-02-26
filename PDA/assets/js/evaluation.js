@@ -10,6 +10,7 @@ $(document).ready(function() {
         $('.evaluation-menu').removeClass('active');
         $(this).parent().addClass('active');
 
+        $('.evaluation-title').removeClass('d-none');
         $('.emoticons').removeClass('d-none');
     });
 });
