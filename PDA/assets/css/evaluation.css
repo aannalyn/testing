@@ -41,8 +41,13 @@
 
 .evaluation-menu {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     margin: 6px;
+}
+
+.evaluation-menu .evaluation-btn:hover {
+    background-color: #1FADAB;
 }
 
 .evaluation-btn {
@@ -53,7 +58,10 @@
     border-radius: 50%;
     background-color: #D3D3D3;
     cursor: pointer;
+    transition: background-color 2ms;
 }
+
+
 
 .evaluation-menu.active .evaluation-btn {
     background-color: #1FADAB;
@@ -66,6 +74,8 @@
     text-align: center;
     margin: 1rem 0;
 }
+
+.evaluation-total:empty { display: none; }
 
 
 
@@ -85,6 +95,7 @@
 
 .emoticon-star {
     display: block;
+    font-size: 0;
 }
 
 

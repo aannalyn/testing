@@ -1,0 +1,54 @@
+.speakers-page__content {
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .speakers-page__content { padding: 3rem 2rem; }
+}
+@media only screen and (min-width: 1367px) { 
+    .speakers-page__content {  padding: 3rem; }
+}
+
+
+
+/* Speakers List */
+.speakers {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.speaker {
+    padding: 1rem;
+    width: calc(50% - 2rem);
+}
+
+.speaker span { color: #828282; }
+
+.speaker-photo {
+    width: 90px;
+    height: 90px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.speaker-link {
+    color: inherit;
+    font-family: Oswald;
+}
+
+.speaker-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 576px) {
+    .speaker { width: calc(50% - 2rem); }
+}
+
+@media only screen and (min-width: 993px) {
+    .speaker { width: calc(33.33% - 2rem); }
+}
+
+
+
