@@ -1,3 +1,15 @@
+.venue-page__content {
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .venue-page__content { padding: 3rem 2rem; }
+}
+@media only screen and (min-width: 1367px) { 
+    .venue-page__content {  padding: 3rem; }
+}
+
+
 .btn.btn-view-direction {
     width: 165px;
     border-radius: 20px;

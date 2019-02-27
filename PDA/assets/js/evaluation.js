@@ -12,6 +12,16 @@ $(document).ready(function() {
 
         $('.evaluation-title').removeClass('d-none');
         $('.emoticons').removeClass('d-none');
+
+        var selectedBtn = $(this).attr('data-label');
+        if (selectedBtn == 'visual-aids') {
+            $('.btn-skip').addClass('d-none');
+            $('.btn-remarks').removeClass('d-none');
+        } else {
+            $('.btn-skip').removeClass('d-none');
+            $('.btn-remarks').addClass('d-none');
+        }
+
     });
 
     $(".speaker-ratings").starRating({

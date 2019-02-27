@@ -43,6 +43,10 @@
     color: inherit;
 }
 
+.speaker-link h4 {
+    font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 576px) {
     .speaker { 
         width: calc(50% - 2rem); 

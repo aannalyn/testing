@@ -107,6 +107,7 @@
 .schedule-time {
     color: #304C95;
     font-weight: bold;
+    font-size: 18px;
 }
 
 
@@ -219,6 +220,7 @@
     .schedule-time {
         color: inherit;
         font-weight: normal;
+        font-size:16px;
     }
 }
 
