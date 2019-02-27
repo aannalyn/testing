@@ -196,6 +196,22 @@
     margin: 0;
 }
 
+.ratings-wrapper {
+    font-size: 0;
+}
+
+.ratings-wrapper > * { 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.ratings-wrapper span {
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.ratings-wrapper span:empty { display: none; }
+
 .btn-primary.pda-btn-primary.btn-evaluate {
     width: 130px;
     text-transform: uppercase;

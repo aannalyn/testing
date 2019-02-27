@@ -13,4 +13,15 @@ $(document).ready(function() {
         $('.evaluation-title').removeClass('d-none');
         $('.emoticons').removeClass('d-none');
     });
+
+    $(".speaker-ratings").starRating({
+        initialRating: 4,
+        strokeWidth: 10,
+        strokeColor: '#95989A',
+        starSize: 18,
+        emptyColor: 'lightgray',
+        hoverColor: '#1FADAB',
+        activeColor: '#1FADAB',
+        useGradient: false
+    });
 });
