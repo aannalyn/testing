@@ -85,18 +85,145 @@
 
 /* Speakers Schedule */
 .speaker-schedule {
-    margin: 0;
+    margin: 0 0 1.5rem;
     padding: 0;
     list-style-type: none;
+    text-align: center;    
+    min-height: 50px;
+    line-height: normal;
 }
+
+.speaker-schedule > * {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
 
 .speaker-schedule p {
     margin: 0;
     color: #7F7F7F;
 }
 
+.schedule-time {
+    color: #304C95;
+    font-weight: bold;
+}
 
 
-/* Tabs */
+/* Dropdown tab menus */
+.program-menus { 
+    font-size: 0; 
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.program-menus .dropdown {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.program-menus button { 
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #1FADAB;
+    border-color: #cdcdcd;
+    border-radius: 0; 
+}
+
+.program-menus .dropdown-menu.nav { 
+    display: none; 
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+}
+
+.program-menus .dropdown-menu.show { 
+    display: block; 
+    width: 100%;
+}
+
+.program-menus .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border-color: #cdcdcd;
+    border-radius: 0;
+}
+
+.dropdown-nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: .25rem 1.5rem;
+    margin: 0;
+    font-size: 14px;
+}
+
+.dropdown-nav-link.active,
+.program-menus .dropdown-item:active {
+    background-color: #1FADAB;
+    color: #FFFFFF;
+    border-color: #1FADAB;
+    border-bottom-color: #7ACBC5;
+}
+
+.program-menus .btn:focus {
+    box-shadow: none;
+}
+
+.program-menus .btn:hover {
+    color: #1FADAB;
+    background-color: #f8f9fa;
+}
+
+.program-menus .dropdown-item {
+    color: #1FADAB;
+}
+
+.program-menus .dropdown-item:active {
+    background-color: #1FADAB;
+}
+
+.program-menus .dropdown-item:not(:last-of-type),
+.dropdown-nav-link:not(:last-of-type) { border-bottom: 1px solid #cdcdcd; }
+
+
+@media only screen and (min-width: 575px) {
+
+    .program-menus .dropdown {
+        width: 50%;
+    }
+
+    .program-menus .dropdown-menu.nav.show { 
+        width: auto;
+    }
+
+    .date-dropdown > button:first-of-type { border-right: none; }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .program-menus .dropdown {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .speaker-schedule {
+        margin-bottom: 0;
+    }
+
+    .speaker-schedule > * {
+        width: 33.33%;
+    }
+
+    .schedule-time {
+        color: inherit;
+        font-weight: normal;
+    }
+}
+
+
+
+
 .tab-content>.tab-pane:empty { display: none; }
 .tab-content>.tab-pane { padding: 1rem; }
+

@@ -7,7 +7,8 @@
 
     <title>PDA</title>
 
-    <link rel="stylesheet" href="./assets/vendors/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link href="./assets/vendors/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendors/fontawesome/css/all.css" rel="stylesheet">
     <link href="./assets/css/fonts/roboto.css" rel="stylesheet">
     <link href="./assets/css/fonts/oswald.css" rel="stylesheet">
     
@@ -73,39 +74,121 @@
 
             <div class="program-result-wrapper">
                 <div class="container">
-                    <h4 class="program-dates">Day 2 | May 13 (Tuesday)</h4>
-                    <ul class="nav nav-tabs program-nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item program-nav-item flex-fill text-center">
-                            <a class="nav-link program-nav-link active" id="home-tab" data-toggle="tab" href="#fr1" role="tab" aria-controls="fr1" aria-selected="true">Function Room 1</a>
-                        </li>
-                        <li class="nav-item program-nav-item flex-fill text-center">
-                            <a class="nav-link program-nav-link" id="profile-tab" data-toggle="tab" href="#fr2n3" role="tab" aria-controls="fr2n3" aria-selected="false">Function Room 2 & 3</a>
-                        </li>
-                        <li class="nav-item program-nav-item flex-fill text-center">
-                            <a class="nav-link program-nav-link" id="contact-tab" data-toggle="tab" href="#fr4" role="tab" aria-controls="fr4" aria-selected="false">Function Room 4</a>
-                        </li>
-                        <li class="nav-item program-nav-item flex-fill text-center">
-                            <a class="nav-link program-nav-link" id="contact-tab" data-toggle="tab" href="#fr5" role="tab" aria-controls="fr5" aria-selected="false">Function Room 5</a>
-                        </li>
-                        <li class="nav-item program-nav-item flex-fill text-center">
-                            <a class="nav-link program-nav-link" id="contact-tab" data-toggle="tab" href="#frothers" role="tab" aria-controls="frothers" aria-selected="false">Function Room 7, 8 & 9</a>
-                        </li>
-                    </ul>
-    
+                    <!-- <h4 class="program-dates">Day 2 | May 13 (Tuesday)</h4> -->
+
+                    
+                    <div class="program-menus">
+                        <div class="dropdown date-dropdown">
+                            <button class="btn dropdown-toggle border-bottom-0" type="button" id="dateDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Schedule
+                            </button>
+                            <div class="dropdown-menu date-dropdown-menu" aria-labelledby="dateDropdownMenuButton">
+                                <a class="dropdown-item" href="#">Day 1 | May 12, 2019</a>
+                                <a class="dropdown-item" href="#">Day 2 | May 13, 2019</a>
+                                <a class="dropdown-item" href="#">Day 3 | May 11, 2019</a>
+                            </div>
+                        </div>
+                        <div class="dropdown room-dropdown">
+                            <button class="btn dropdown-toggle border-bottom-0" type="button" id="roomDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Room
+                            </button>
+                            <div class="nav dropdown-menu" aria-labelledby="roomDropdownMenu">
+                                <a class="nav-link dropdown-nav-link active" id="home-tab" data-toggle="tab" href="#fr1" role="tab" aria-controls="fr1" aria-selected="true">Function Room 1</a>
+                                <a class="nav-link dropdown-nav-link" id="profile-tab" data-toggle="tab" href="#fr2n3" role="tab" aria-controls="fr2n3" aria-selected="false">Function Room 2 & 3</a>
+                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#fr4" role="tab" aria-controls="fr4" aria-selected="false">Function Room 4</a>
+                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#fr5" role="tab" aria-controls="fr5" aria-selected="false">Function Room 5</a>
+                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#frothers" role="tab" aria-controls="frothers" aria-selected="false">Function Room 7, 8 & 9</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="tab-content program-tab-content" id="myTabContent">
                         <div class="tab-pane program-tab-pane fade show active" id="fr1" role="tabpanel" aria-labelledby="fr1-tab">
                             <div class="speakers-schedule">
-                                <div class="speaker-schedule d-flex">
+                                <div class="speaker-schedule d-flex flex-wrap">
                                     <div class="schedule-time flex-fill">8:00AM - 9:00AM</div>
                                     <div class="schedule-topic flex-fill">
                                         <p>Lorem ipsum dolor sit amet</p>
-                                        <p>Moderator:  Dr. Vicky Pangilinan</p>
+                                        <p class="font-weight-bold">Moderator:  Dr. Vicky Pangilinan</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
                                         <p>STUDENT CONGRESS</p>
-                                        <p>Dr. Ryan Tiongco</p>
+                                        <p><a href="#" class="pda-primary-text">Dr. Ryan Tiongco</a></p>
                                     </div>
                                 </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00AM - 10:00AM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00AM -11:00AM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00AM - 12:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill font-weight-bold">12:00AM - 1:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase font-weight-bold">Lunch Break</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:00PM - 2:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:00PM - 3:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:00PM -4:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:00PM - 5:00PM</div>
+                                    <div class="schedule-topic flex-fill">
+
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        
+                                    </div>
+                                </div>
+    
                             </div>
                         </div>
                         <div class="tab-pane program-tab-pane fade show active" id="fr2n3" role="tabpanel" aria-labelledby="fr2n3-tab">
@@ -121,7 +204,7 @@
     
                         </div>
                     </div>
-     
+                    
                 </div>
             </div>
 
@@ -135,5 +218,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./assets/vendors/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/program.js"></script>
+
 </body>
 </html>
