@@ -188,22 +188,23 @@
 
 @media only screen and (min-width: 575px) {
 
+    .program-menus {
+        border-bottom: 2px solid #1FADAB;
+    }
+
     .program-menus .dropdown {
         width: 50%;
     }
 
-    .program-menus .dropdown-menu.nav.show { 
-        width: auto;
-    }
-
     .date-dropdown > button:first-of-type { border-right: none; }
-
 }
 
 @media only screen and (min-width: 769px) {
     .program-menus .dropdown {
         width: auto;
     }
+
+    .program-menus .dropdown-menu.show { width: auto; }
 }
 
 @media only screen and (min-width: 993px) {
