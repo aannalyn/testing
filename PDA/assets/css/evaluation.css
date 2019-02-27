@@ -129,7 +129,7 @@
 }
 .pda-login-form .form-control {
     color: #1FADAB;
-    width: 300px;
+    width: 100%;
     border: none;
 }
 
@@ -267,6 +267,10 @@
 
     .speaker-item {
         width: calc(50% - 10px);
+    }
+
+    .pda-login-form .form-control {
+        width: 300px;
     }
 }
 
