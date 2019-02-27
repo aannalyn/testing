@@ -1,3 +1,14 @@
+.evaluation-page__content {
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .evaluation-page__content { padding: 3rem 2rem; }
+}
+@media only screen and (min-width: 1367px) { 
+    .evaluation-page__content {  padding: 3rem; }
+}
+
 /* Icons */
 .pda-icon-16 {
     width: 16px;
@@ -103,6 +114,8 @@
 .pda-login-form {
     padding: 2rem 2.5rem 3rem;
     border-radius: 25px;
+    width: 100%;
+    margin: 15% auto 0;
 }
 .pda-login-form h4 {
     color: #304C95;
@@ -168,6 +181,7 @@
 
 .card.speaker-item-card {
     border-radius: 13px;
+    border-color: #707070;
 }
 
 .speaker-item-photo {
@@ -189,7 +203,7 @@
 }
 
 .speaker-item-title h4 {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #1FADAB;
     display: inline-block;
@@ -206,7 +220,7 @@
 }
 
 .ratings-wrapper span {
-    font-size: 13px;
+    font-size: 10px;
     margin-left: 6px;
 }
 
@@ -239,6 +253,7 @@
     .pda-login-form {
         border: 1px solid #707070;
         box-shadow: 0 3px 6px rgba(112, 112, 112, 0.16);
+        width: 400px;
     }
 
     .pda-login-form h4 {
