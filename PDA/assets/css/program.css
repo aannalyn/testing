@@ -98,4 +98,5 @@
 
 
 /* Tabs */
+.tab-content>.tab-pane:empty { display: none; }
 .tab-content>.tab-pane { padding: 1rem; }
