@@ -21,6 +21,7 @@
 .speaker {
     padding: 1rem;
     width: calc(50% - 2rem);
+    text-align: center;
 }
 
 .speaker span { color: #828282; }
@@ -43,11 +44,16 @@
 }
 
 @media only screen and (min-width: 576px) {
-    .speaker { width: calc(50% - 2rem); }
+    .speaker { 
+        width: calc(50% - 2rem); 
+    }
 }
 
 @media only screen and (min-width: 993px) {
-    .speaker { width: calc(33.33% - 2rem); }
+    .speaker { 
+        width: calc(33.33% - 2rem); 
+        text-align: left;
+    }
 }
 
 
