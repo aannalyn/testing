@@ -1,0 +1,174 @@
+.registration-page__content {
+    padding: 1rem;
+    font-family: Oswald;
+}
+
+@media only screen and (min-width: 769px) {
+    .registration-page__content { padding: 3rem 2rem; }
+}
+@media only screen and (min-width: 1367px) { 
+    .registration-page__content {  padding: 3rem; }
+}
+
+.registration-page__content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.registration-place {
+    font-size: 1.3rem;
+}
+
+.registration-title {
+    font-size: 2rem;
+    color: #605B1C;
+}
+
+.registration-name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.registration-others {
+    font-size: 0;
+}
+
+.registration-others img {
+    width: 200px;
+    height: auto;
+}
+
+.registration-others > div { 
+    display: block;
+    font-size: 1rem;
+}
+
+.registration-others > div:last-of-type {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.registration-others div:last-of-type > h3,
+.registration-others div:last-of-type > div { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+.registration-col:first-of-type {
+    text-align: center;
+}
+
+.registration-col:last-of-type {
+    padding-top: 2rem;
+}
+
+.b4t-heading {
+    letter-spacing: -3px;
+}
+
+.social-media-list {
+
+}
+
+.social-media-list > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-icon {
+
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    text-align: center;
+}
+
+.social-media-icon i {
+    color: #ffffff;
+}
+
+
+.sched-details {
+    background-color: #00394C;
+    position: relative;
+    margin-left: auto;
+    padding: 1rem;
+    color: #DDF196;
+    font-family: Oswald;
+    font-size: 1.4rem;
+    z-index: 1;
+    width: 100%;
+}
+
+.sched-details-inner {
+    margin-left: auto;
+}
+
+.sched-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sched-details-bg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    display: none;
+}
+
+@media only screen and (min-width: 577px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+    .registration-col:first-of-type {
+        text-align: left;
+    }
+
+    .registration-others > div { 
+        display: inline-block;
+        vertical-align: top; 
+    }
+
+    .registration-others > div:last-of-type {
+        width: calc(100% - 208px);
+        padding-left: 8px;
+    }
+
+    
+    .sched-details {
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .sched-details-bg {
+        display: block;
+        width: 435px;
+    } 
+
+    .sched-details-inner {
+        width: 380px;
+    } 
+
+
+}
+
+
+@media only screen and (min-width: 993px) {
+    .registration-col:last-of-type {
+        margin-top: 9rem;
+    }
+}
+
+

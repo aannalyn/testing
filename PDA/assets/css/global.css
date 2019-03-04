@@ -30,6 +30,8 @@ body {
  * Colors
  ********************************************************************************/
 .pda-primary-text { color: #1FADAB; }
+.pda-tertiary-text { color: #304C95; }
+
 .pda-primary-bg { background-color: #1FADAB; }
 .pda-tertiary-bg { background-color: #304C95; }
 
@@ -95,6 +97,9 @@ body {
 }
 .pda-icon.pda-more-horiz { 
     background-position: 0 -319px; 
+}
+.pda-icon.pda-registration { 
+    background-position: 0 -416px; 
 }
 
 
@@ -202,7 +207,7 @@ body {
 /* 
  * Layout
  ********************************************************************************/
-.pda-main-container {   
+.pda-container {   
     position: relative;
     width: 100%;
     height: auto;
@@ -227,9 +232,9 @@ body {
 
 
 @media only screen and (min-width: 769px) { 
-    .pda-main-container {
+    .pda-container {
         padding-top: 0;
-        padding-left: 87px;
+        padding-left: 105px;
         min-height: 100vh;
     }
     
@@ -239,7 +244,7 @@ body {
 
 }
 @media only screen and (min-width: 1367px) { 
-    .pda-main-container {
+    .pda-container {
         width: 1200px; 
         margin-left: auto;
         margin-right: auto;
@@ -380,6 +385,9 @@ body {
 .nav-link.active .pda-icon.pda-more-horiz { 
     background-position: 0 -320px; 
 }
+.nav-link.active .pda-icon.pda-registration { 
+    background-position: 0 -385px;
+}
 
 .nav-link .pda-icon.pda-icon-global {
     position: absolute;
@@ -401,7 +409,7 @@ body {
 @media only screen and (min-width: 769px) {
     .sidebar-nav {
         height: 100vh;
-        width: 87px;
+        width: 105px;
         text-align: center;
         padding: 2rem 0;
         line-height: normal;
@@ -471,7 +479,7 @@ body {
 @media only screen and (min-width: 1367px) { 
     .sidebar-nav {
         left: initial;
-        margin-left: -87px;
+        margin-left: -105px;
     }
 }
 
@@ -493,7 +501,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-top: auto;
+    margin-top: 2.5rem;
     padding-left: 95px;
     width: 90%;
 }
@@ -504,8 +512,9 @@ body {
     left: 15px;
     width: 84px;
     height: 84px;
-    -o-object-fit: contain;
-    object-fit: contain;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .pda-modal-header-summary > div h4 {

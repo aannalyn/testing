@@ -23,6 +23,8 @@
     height: auto;
     -o-object-fit: contain;
     object-fit: contain;
+    position: absolute;
+    right: 0;
 }
 
 @media only screen and (min-width: 769px) {
@@ -35,25 +37,43 @@
     }
 
     .doc-photo {
-        width: 397px;
-        margin-left: auto;
-        display: block;
+        width: 50%; 
+        top: 0;
     }
 }
+
+
+
 
 @media only screen and (min-width: 993px) {
     .about-page__content {
         padding: 3rem 250px 3rem 2rem;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-page__content {
+        width: 90%;
+    }
+
     .doc-photo {
-        position: absolute;
-        right: 0;
+        width: 50%; 
+        top: 0;
     }
 }
+
 
 @media only screen and (min-width: 1367px) { 
     .about-page__content {
         padding: 3rem;
+    }
+
+    .about-page__content {
+        width: 80%;
+    }
+
+    .doc-photo { 
+        width: 50%;
     }
 }

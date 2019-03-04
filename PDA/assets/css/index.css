@@ -1,1 +1,144 @@
+.pda-container {
+    background: none;
+    background-color: #CBE6D2;
+}
 
+.main-page__content {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background: url('../images/pages/main/banner-bg.jpg') no-repeat 50% 20%;
+    background-size: contain;
+    padding: 1rem 0;
+}
+
+.heading-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #164296;
+}
+
+.pda-logo-inner {
+    width: 95px;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.dpa-details {
+    font-size: 0;
+}
+
+.dpa-details > div {
+    width: 100%;
+    display: block;
+}
+
+.dpa-details > div:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.dpa-details > div:first-of-type > p {
+    margin: 0;
+}
+
+.dpa-details > div:last-of-type {
+    font-size: 1rem;
+}
+
+.dpa-details > div:last-of-type {
+    position: absolute;
+    bottom: 25%;
+}
+
+.dpa-details > div:last-of-type h1 {
+    font-size: 20;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dpa-details > div:last-of-type sub {
+    font-size: 80%;
+    left: -8px;
+    bottom: 0;
+}
+
+.dpa-details > div:last-of-type > div {
+    line-height: normal;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 577px) {
+    .main-page__content {
+        background-position: center top;
+    }
+
+    .heading-title {
+        font-size: 2.5rem;
+    }
+
+    .pda-logo-inner {
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .main-page__content {
+        height: 100vh;
+        padding: 2rem 1rem;
+        background-position: center;
+    }
+
+    .heading-title {
+        font-size: 3rem;
+    }
+
+    .pda-logo-inner {
+        width: 180px;
+    }
+
+    .pda-logo-inner {
+        margin-right: 5%;
+    }
+
+    .dpa-details {
+        position: absolute;
+        bottom: 2rem;
+        left: 9rem;
+        right: 1rem;
+    }
+
+    .dpa-details > div {
+        width: 50%;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .dpa-details > div:first-of-type {
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    .dpa-details > div:last-of-type {
+        position: relative;
+        font-size: 3rem;
+    }
+    .dpa-details > div:last-of-type h1 {
+        font-size: 8rem;
+    }
+
+    .dpa-details > div:last-of-type sub {
+        left: -25px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+}
