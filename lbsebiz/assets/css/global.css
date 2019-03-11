@@ -23,8 +23,9 @@ body {
 }
 
 /* Header */
-.lbs-main-navbar {
+.navbar.lbs-main-navbar {
     background-color: #314750;
+    padding-top: 1rem;
 }
 
 .navbar-collapse.lbs-main-navbar-collapse {
@@ -94,6 +95,16 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, .60);
     z-index: 0;
+}
+
+.footer-detail {
+    margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .footer-detail {
+        margin-bottom: 0;
+    }
 }
 
 .footer-detail h5 {
