@@ -1,0 +1,17 @@
+.intro-section {
+    width: 100%;
+    height: calc(100vh - 79px);
+    margin-top: 79px;
+    background: url(../images/pages/design/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.what-we-do-section {
+    background: url(../images/global/box-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.how-we-do-section {
+    background: url(../images/pages/design/how-we-do-bg.jpg) no-repeat center;
+    background-size: cover;
+}

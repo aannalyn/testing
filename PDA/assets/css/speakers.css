@@ -20,15 +20,15 @@
 
 .speaker {
     padding: 1rem;
-    width: calc(50% - 2rem);
+    width: calc(100% - 2rem);
     text-align: center;
 }
 
 .speaker span { color: #828282; }
 
 .speaker-photo {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 50%;
@@ -52,10 +52,14 @@
     .speaker { 
         width: calc(50% - 2rem); 
     }
+
+
 }
 
 @media only screen and (min-width: 993px) {
     .speaker { 
         width: calc(33.33% - 2rem); 
     }
+
+
 }

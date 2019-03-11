@@ -63,24 +63,57 @@
         </nav>
 
         <div class="pda-content evaluation-page__content">
-            <div class="content">
 
-                <form class="pda-login-form text-center">
-                    <h4>Philippine Dental Association</h4>
-                    <img src="./assets/images/global/icons/pda-logo.svg" alt="PDA Logo" class="pda-form-logo mb-4">
-                    <div class="form-group">
-                        <input type="text" class="form-control mx-auto" id="prc-no" aria-describedby="prcNo" placeholder="PRC No">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control mx-auto" id="prc-pass" aria-describedby="prcPass" placeholder="Password">
-                    </div>
-                    <button type="button" class="btn btn-login text-uppercase">Login</button>
+            <!-- <div class="container"> -->
+                <h2 class="site-heading">Evaluation</h2>
+
+                <!-- Login Evaluation -->
+                <section id="login-evaluation" class="evaluation-content opened">
     
-                    <!-- <p class="text-uppercase text-danger mt-5">* Invalid PRC Number</p> -->
-                </form>
+                    <form class="pda-login-form text-center">
+                        <h4>Philippine Dental Association</h4>
+                        <img src="./assets/images/global/icons/pda-logo.svg" alt="PDA Logo" class="pda-form-logo mb-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control mx-auto" id="prc-no" aria-describedby="prcNo" placeholder="PRC No">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control mx-auto" id="prc-pass" aria-describedby="prcPass" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-login text-uppercase">Login</button>
+        
+                        <p class="text-uppercase text-danger mt-5">* Invalid PRC Number</p>
+                    </form>
     
-                <div class="speakers-wrapper d-none">
-                    <h3 class="page-heading text-uppercase">Evaluation</h3>
+                </section>
+    
+                <!-- Menu Evaluation -->
+                <section id="menu-evaluation" class="evaluation-content">
+                    <ul class="evaluation-navs">
+                        <li class="evaluation-nav" data-evaluation="speakers">
+                            <div class="evaluation-photo"><img src="./assets/images/pages/evaluation/general.svg" alt="Speaker Icon"></div>
+                            <div class="evaluation-label">Speakers Evaluation</div>
+                        </li>
+                        <li class="evaluation-nav" data-evaluation="general">
+                            <div class="evaluation-photo"><img src="./assets/images/pages/evaluation/general.svg" alt="Speaker Icon"></div>
+                            <div class="evaluation-label">General Evaluation</div>
+                        </li>
+                        <li class="evaluation-nav" data-evaluation="opening">
+                            <div class="evaluation-photo"><img src="./assets/images/pages/evaluation/general.svg" alt="Speaker Icon"></div>
+                            <div class="evaluation-label">Opening Evaluation</div>
+                        </li>
+                        <li class="evaluation-nav" data-evaluation="fellowship">
+                            <div class="evaluation-photo"><img src="./assets/images/pages/evaluation/general.svg" alt="Speaker Icon"></div>
+                            <div class="evaluation-label">Fellow Evaluation</div>
+                        </li>
+                        <li class="evaluation-nav" data-evaluation="election">
+                            <div class="evaluation-photo"><img src="./assets/images/pages/evaluation/general.svg" alt="Speaker Icon"></div>
+                            <div class="evaluation-label">Election Evaluation</div>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- Speakers Evaluation -->
+                <section id="speakers-evaluation" class="evaluation-content">
                     <div class="speaker-list">
                         <div class="speaker-item">
                             <div class="card speaker-item-card">
@@ -124,11 +157,378 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        </div>
+                </section>
+    
+                <!-- General Evaluation -->
+                <section id="general-evaluation" class="evaluation-content">
 
-            </div>
+                    <form class="evaluation-form text-uppercase">
+                        <div class="evaluation-main-heading">General Evaluation</div>
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Registration</div>
+                            <div class="evaluation-item-options">
+                                <div>Registration Procedure</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Adequacy of Manpower</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Registration Venue Ambience</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Convention Kit</div>
+                            <div class="evaluation-item-options">
+                                <div>Order of Distribution</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Quality Kit</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Scientific Sessions</div>
+                            <div class="evaluation-item-options">
+                                <div>Timely, Informative & Relevant</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Orderliness of the Sessions</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Audio-Visual AIDS</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Time Management</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Trade and Exhibit</div>
+                            <div class="evaluation-item-options">
+                                <div>Educational value (updates on material, equipment, etc.)</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical arrangement (booth set up, flow of traffic, etc.)</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Distribution of promotional materials</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Food/Catering (SMX Convention Center)</div>
+                            <div class="evaluation-item-options">
+                                <div>Quality of food</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Quantity of Food</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Adequacy of tables/chairs/manpower</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Venue</div>
+                            <div class="evaluation-item-options">
+                                <div>Accessibility</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Adequacy of facilities</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical arrangement</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Venue</div>
+                            <div class="evaluation-item-options">
+                                <div>Accessibility</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Adequacy of facilities</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical arrangement</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Overall</div>
+                            <div class="evaluation-item-options">
+                                <div>How would you rate the 110th PDA Annual Convention?</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Comment & Suggestions</div>
+                            <div class="evaluation-item-options has-input">
+                                <div class="form-group comments-form-group">
+                                    <textarea class="form-control" id="comments-textarea" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+              
+                        <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-submit">Submit</button>
+                    </form>
+
+                </section>
+    
+                <!-- Opening Ceremony Evaluation -->
+                <section id="opening-evaluation" class="evaluation-content">
+
+                    <form class="evaluation-form text-uppercase">
+                        <div class="evaluation-main-heading">Opening Ceremony</div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Invitations</div>
+                            <div class="evaluation-item-options">
+                                <div>Registration Procedure</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Venue</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Reception</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical Arrangement</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Program Flow</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Time Management</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Entertainment</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Food</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Audio-Visual (Technical)</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Comment & Suggestions</div>
+                            <div class="evaluation-item-options has-input">
+                                <div class="form-group comments-form-group">
+                                    <textarea class="form-control" id="comments-textarea" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+              
+                        <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-submit">Submit</button>
+                    </form>
+
+                </section>
+    
+                <!-- Fellowship Night Evaluation -->
+                <section id="fellowship-evaluation" class="evaluation-content">
+
+                    <form class="evaluation-form text-uppercase">
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Fellowship Night</div>
+                            <div class="evaluation-item-options">
+                                <div>Invitations</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Venue</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Reception</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Reception</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical Arrangement</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Program Flow</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Time Management</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Entertainment</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Food</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Audio-Visual (Technical)</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Comment & Suggestions</div>
+                            <div class="evaluation-item-options has-input">
+                                <div class="form-group comments-form-group">
+                                    <textarea class="form-control" id="comments-textarea" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-submit">Submit</button>
+                    </form>
+                    
+                </section>
+    
+                <!-- Election Evaluation -->
+                <section id="election-evaluation" class="evaluation-content">
+
+                    <form class="evaluation-form text-uppercase">
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">ELECTION</div>
+                            <div class="evaluation-item-options">
+                                <div>Invitations</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Venue</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Physical Arrangement</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                            <div class="evaluation-item-options">
+                                <div>Orderliness</div>
+                                <div><div class="evaluation-ratings"></div></div>
+                                <div>5.0</div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation-item">
+                            <div class="evaluation-item-heading">Comment & Suggestions</div>
+                            <div class="evaluation-item-options has-input">
+                                <div class="form-group comments-form-group">
+                                    <textarea class="form-control" id="comments-textarea" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <button type="button" class="btn btn-primary pda-btn-primary text-uppercase btn-submit">Submit</button>
+                    </form>
+
+                </section>
+            <!-- </div> -->
+
+                <!-- <form class="pda-login-form text-center">
+                    <h4>Philippine Dental Association</h4>
+                    <img src="./assets/images/global/icons/pda-logo.svg" alt="PDA Logo" class="pda-form-logo mb-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control mx-auto" id="prc-no" aria-describedby="prcNo" placeholder="PRC No">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control mx-auto" id="prc-pass" aria-describedby="prcPass" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-login text-uppercase">Login</button>
+    
+                    <p class="text-uppercase text-danger mt-5">* Invalid PRC Number</p>
+                </form>
+    
+                <div class="speakers-wrapper d-none">
+ 
+                </div> -->
+
+        
         </div>
+
     </div>
 
     <!-- Modal -->

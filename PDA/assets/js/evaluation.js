@@ -1,8 +1,46 @@
 $(document).ready(function() {
-    // Evaluation Page
+
+    // Star Rating Initialization
+    $(".speaker-ratings").starRating({
+        initialRating: 4,
+        strokeWidth: 10,
+        strokeColor: '#95989A',
+        starSize: 18,
+        emptyColor: 'lightgray',
+        hoverColor: '#1FADAB',
+        activeColor: '#1FADAB',
+        ratedColor: '#1FADAB',
+        useGradient: false
+    });
+
+    $('.evaluation-ratings').starRating({
+        initialRating: 5,
+        strokeWidth: 10,
+        strokeColor: '#95989A',
+        starSize: 30,
+        emptyColor: 'lightgray',
+        hoverColor: '#1FADAB',
+        activeColor: '#1FADAB',
+        ratedColor: '#1FADAB',
+        useGradient: false
+    });
+
+
+
     $('.btn-login').on('click', function() {
-        $('.pda-login-form').addClass('d-none');
-        $('.speakers-wrapper').removeClass('d-none');
+        $('#login-evaluation').removeClass('opened');
+        $('#menu-evaluation').addClass('opened');
+    });
+
+
+    // Evaluation Nav
+    $('.evaluation-nav').on('click', function() {
+        $('#menu-evaluation').removeClass('opened');
+        
+        var selectedEvaluation = $(this).attr('data-evaluation');
+        $('#' + selectedEvaluation + '-evaluation').addClass('opened');
+
+        // $('.site-heading').text(selectedEvaluation + ' Evaluation');
     });
 
 
@@ -21,17 +59,7 @@ $(document).ready(function() {
             $('.btn-skip').removeClass('d-none');
             $('.btn-remarks').addClass('d-none');
         }
-
     });
 
-    $(".speaker-ratings").starRating({
-        initialRating: 4,
-        strokeWidth: 10,
-        strokeColor: '#95989A',
-        starSize: 18,
-        emptyColor: 'lightgray',
-        hoverColor: '#1FADAB',
-        activeColor: '#1FADAB',
-        useGradient: false
-    });
+
 });

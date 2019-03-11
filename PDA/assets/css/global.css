@@ -214,10 +214,8 @@ body {
     min-height: 100vh;
     background: #FFFFFF url(../images/global/bg1.png) no-repeat fixed bottom right;
     background-size: contain; 
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 65px;
-    padding-left: 0;
+    margin: 0 auto;
+    padding: 65px 0 2rem;
     overflow-y: auto;
 }
 
@@ -347,11 +345,25 @@ body {
 .nav-item::after { bottom: -16px; }
 
 .nav-link {
+    position: relative;
     color: #1FADAB;
     padding: 0 2rem;
     font-size: 0;
     height: 55px;
     line-height: 55px;
+}
+
+.nav-link.active::after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-link:focus {
@@ -409,7 +421,7 @@ body {
 @media only screen and (min-width: 769px) {
     .sidebar-nav {
         height: 100vh;
-        width: 105px;
+        width: 95px;
         text-align: center;
         padding: 2rem 0;
         line-height: normal;
@@ -466,6 +478,12 @@ body {
         width: calc(100% - 32px);
         font-size: 10px;
         margin: 2px auto 0;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .sidebar-nav {
+        width: 105px;
     }
 }
 
