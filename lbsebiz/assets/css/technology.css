@@ -1,0 +1,31 @@
+.intro-section {
+    width: 100%;
+    height: calc(100vh - 79px);
+    margin-top: 79px;
+    background: url(../images/pages/technology/technology-intro.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.technology-heading {
+    color: #9E3178;
+    font-size: 2rem;
+}
+
+.technology-heading > span {
+    color: #90C23E;
+}
+
+.technology-label {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 992px) { 
+    .technology-heading {
+        font-size: 2.5rem;
+    }
+}   
+
+@media only screen and (min-width: 1200px) {
+
+}
+

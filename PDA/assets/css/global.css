@@ -232,7 +232,7 @@ body {
 @media only screen and (min-width: 769px) { 
     .pda-container {
         padding-top: 0;
-        padding-left: 105px;
+        padding-left: 95px;
         min-height: 100vh;
     }
     

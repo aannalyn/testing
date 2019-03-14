@@ -6,139 +6,105 @@
 .main-page__content {
     width: 100%;
     height: calc(100vh - 65px);
-    background: url('../images/pages/main/banner-bg.jpg') no-repeat 50% 20%;
-    background-size: contain;
-    padding: 1rem 0;
-}
-
-.heading-title {
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
     color: #164296;
 }
 
-.pda-logo-inner {
-    width: 95px;
-    height: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-}
-
-.dpa-details {
-    font-size: 0;
-}
-
-.dpa-details > div {
+.pda-intro {
+    position: relative;
     width: 100%;
-    display: block;
+    height: 100%;
+    background: url('../images/pages/main/banner-bg.jpg') no-repeat top; 
+    background-size: cover;
+    padding: 0 1rem;
 }
 
-.dpa-details > div:first-of-type {
-    font-size: 18px;
+@media only screen and (min-width: 768px) {
+    .pda-intro {
+        padding: 3% 2rem 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .pda-intro {
+        padding: 7% 2rem 20%;
+    }
+}
+
+.heading-title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
     font-weight: bold;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    margin-top: 1rem;
 }
 
-.dpa-details > div:first-of-type > p {
-    margin: 0;
-}
-
-.dpa-details > div:last-of-type {
-    font-size: 1rem;
-}
-
-.dpa-details > div:last-of-type {
-    position: absolute;
-    bottom: 25%;
-}
-
-.dpa-details > div:last-of-type h1 {
-    font-size: 20;
-    font-weight: bold;
-    margin: 0;
-}
-
-.dpa-details > div:last-of-type sub {
-    font-size: 80%;
-    left: -8px;
-    bottom: 0;
-}
-
-.dpa-details > div:last-of-type > div {
-    line-height: normal;
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 577px) {
-    .main-page__content {
-        background-position: center top;
-    }
-
-    .heading-title {
-        font-size: 2.5rem;
-    }
-
-    .pda-logo-inner {
-        width: 130px;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-
-    .main-page__content {
-        height: 100vh;
-        padding: 2rem 1rem;
-        background-position: center;
-    }
-
+@media only screen and (min-width: 576px) {
     .heading-title {
         font-size: 3rem;
+        margin-top: 2rem;
     }
+}
 
+.pda-logo-inner {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 100px;
+    height: auto;
+}
+
+@media only screen and (min-width: 576px) {
     .pda-logo-inner {
+        top: 13%;
         width: 180px;
     }
+}
 
+@media only screen and (min-width: 768px) {
     .pda-logo-inner {
-        margin-right: 5%;
-    }
-
-    .dpa-details {
-        position: absolute;
-        bottom: 2rem;
-        left: 9rem;
-        right: 1rem;
-    }
-
-    .dpa-details > div {
-        width: 50%;
-        display: inline-block;
-        vertical-align: bottom;
-    }
-
-    .dpa-details > div:first-of-type {
-        position: relative;
-        font-size: 1.5rem;
-    }
-
-    .dpa-details > div:last-of-type {
-        position: relative;
-        font-size: 3rem;
-    }
-    .dpa-details > div:last-of-type h1 {
-        font-size: 8rem;
-    }
-
-    .dpa-details > div:last-of-type sub {
-        left: -25px;
+        top: 15%;
     }
 }
 
-@media only screen and (min-width: 993px) {
+
+.pda-details {
+    width: calc(100% - 3rem);
+    position: absolute;
+    bottom: 2%;
+}
+
+.pda-loc {
+    
+}
+
+.pda-loc p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 576px) {
+    .pda-loc p {
+        font-size: 1.2rem;
+    }
+}
+
+.pda-title {
+    display: none;
+}
+
+.pda-title h1 {
+    font-size: 6.5rem;
+    font-weight: bold;
+}
+
+.pda-title div {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 768px) {
+    .pda-title {
+        display: block;
+    }
 }
