@@ -7,20 +7,36 @@ body {
 
 
 /* Helpers */
-/* Colors
-    #9E3178
-    #90C23E
-    #F78E1E
-    #072E3D
-*/
 .btn-outline-white {
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
 
-.text-gray {
-    color:#848484;
+.text-gray { color:#848484; }
+.text-light-green { color: #90C23E; }
+.text-light-orange { color: #F78E1E; }
+
+/* Icons */
+.lbs-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
 }
+
+.lbs-icon-fb { background-image: url('../images/global/icons/fb.svg'); }
+.lbs-icon-twitter { background-image: url('../images/global/icons/twitter.svg'); }
+.lbs-icon-email { background-image: url('../images/global/icons/globe.svg'); }
+
+
+/* Buttons */
+.btn:hover {
+    background-color: #FFFFFF;
+}
+
 
 /* Header */
 .navbar.lbs-main-navbar {
@@ -49,22 +65,25 @@ body {
     border-top: 1px solid #90C23E;
 }
 
+/* Layout */
+.lbs-page {
+    padding-top: 87px;
+}
+
 /* Section */
 .lbs-section {
     width: 100%;
-    height: 100vh;
-    padding-top: 79px;
+    height: calc(100vh - 79px);
+    padding: 4rem 0 2rem;
 }
 
 .lbs-section-heading {
     color: #9E3178;
-    font-size: 4rem;
-    text-transform: uppercase;
 }
 
 .lbs-section-label {
-    font-size: 2rem;
-    text-transform: uppercase;
+    color: #848484;
+    font-size: 1.5rem;
 }
 
 /* Footer */
@@ -118,4 +137,51 @@ body {
     .footer-detail h5 {
         font-size: 1.3rem;
     }
+}
+
+.navbar.lbs-footer-navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.social-media-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media-item {
+    display: inline-block;
+}
+
+.social-media-item:nth-child(1) > .btn-link { color: #002F91; } 
+.social-media-item:nth-child(2) > .btn-link { color: #5CB7F6; } 
+.social-media-item:nth-child(3) > .btn-link { color: #82D42D; } 
+
+.copyright-label {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.nav-link.lbs-footer-nav-link {
+    font-weight: 400;
+}
+
+.lbs-other-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lbs-other-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.lbs-other-link:not(:last-of-type)::after {
+    content: '|';
+    margin: 0 2px;
+}
+
+.lbs-other-link a {
+    color: inherit;
 }

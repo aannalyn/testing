@@ -1,7 +1,6 @@
 .intro-section {
     width: 100%;
     height: calc(100vh - 79px);
-    margin-top: 79px;
     background: url(../images/pages/design/intro-bg.jpg) no-repeat center;
     background-size: cover;
 }
@@ -14,4 +13,68 @@
 .how-we-do-section {
     background: url(../images/pages/design/how-we-do-bg.jpg) no-repeat center;
     background-size: cover;
+}
+
+.lbs-services {
+
+}
+
+.lbs-service {
+    
+}
+
+.lbs-service-title {
+    background-color: #010101;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.lbs-service-details {
+    color: #FFFFFF;
+    border-top-width: 4px;
+    border-top-style: solid;
+    padding: 3rem 1rem 2rem;
+    height: 500px;
+
+    background-color: #010101;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.lbs-service:nth-child(1) > .lbs-service-details { border-color: #F4C31D; }
+.lbs-service:nth-child(2) > .lbs-service-details { border-color: #6DC978; }
+.lbs-service:nth-child(3) > .lbs-service-details { border-color: #35BDCC; }
+.lbs-service:nth-child(4) > .lbs-service-details { border-color: #FF0093; }
+
+.lbs-service:nth-child(1) .btn-link-service{ color: #F4C31D; }
+.lbs-service:nth-child(2) .btn-link-service{ color: #6DC978; }
+.lbs-service:nth-child(3) .btn-link-service{ color: #35BDCC; }
+.lbs-service:nth-child(4) .btn-link-service{ color: #FF0093; }
+
+.lbs-service:nth-child(1) > .lbs-service-details { background-image: url(../images/pages/design/service-1.png); }
+.lbs-service:nth-child(2) > .lbs-service-details { background-image: url(../images/pages/design/service-2.png); }
+.lbs-service:nth-child(3) > .lbs-service-details { background-image: url(../images/pages/design/service-3.png); }
+.lbs-service:nth-child(4) > .lbs-service-details { background-image: url(../images/pages/design/service-4.png); }
+
+
+.lbs-service-details > div:nth-child(1) {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.lbs-service-details > div:nth-child(2) {
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.service-lists {
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn-link-service {
+    text-align: left;
 }
