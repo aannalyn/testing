@@ -1,6 +1,4 @@
 .section-1 {
-    width: 100%;
-    height: calc(100vh - 79px);
     background: url(../images/pages/design/intro-bg.jpg) no-repeat center;
     background-size: cover;
 }

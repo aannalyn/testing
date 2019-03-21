@@ -1,0 +1,18 @@
+.section-1 {
+    background: url(../images/pages/about/about-intro.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.section-2 {
+    padding: 2rem 0;
+}
+
+.employee-info {
+    background-color: #F4F4F4;
+}
+
+.mission-section,
+.vision-section {
+    padding: 3rem 0;
+    font-size: 1.2rem;
+}

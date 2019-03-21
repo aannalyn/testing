@@ -18,14 +18,14 @@
 }
 
 .intro-label {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 
 
 .section-1 {
     width: 100%;
-    height: calc(100vh - 79px);
+    height: calc(100vh - 87px);
     background: url(../images/pages/technology/technology-intro.jpg) no-repeat center;
     background-size: cover;
 }

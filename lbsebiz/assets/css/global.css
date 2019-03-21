@@ -2,6 +2,7 @@
 /* Reset */
 body {
     font-family: Oswald;
+    color: #848484;
 }
 
 
@@ -33,7 +34,7 @@ body {
 
 
 /* Buttons */
-.btn.btn-outline-whiter:hover {
+.btn.btn-outline-white:hover {
     background-color: #FFFFFF;
 }
 
@@ -74,7 +75,6 @@ header.fixed-top .navbar.lbs-main-navbar {
     background-color: #314750;
     padding-top: 1rem;
     transition: all 300ms ease-out;
-    /* opacity: 1; */
 }
 
 .navbar-collapse.lbs-main-navbar-collapse {
@@ -111,7 +111,8 @@ header.fixed-top .navbar.lbs-main-navbar {
 /* Section */
 .lbs-section {
     width: 100%;
-    height: calc(100vh - 79px);
+    height: calc(100vh - 87px);
+    min-height: calc(100vh - 87px);
     padding: 4rem 0 2rem;
 }
 
@@ -194,6 +195,19 @@ header.fixed-top .navbar.lbs-main-navbar {
 .social-media-item:nth-child(1) > .btn-link { color: #002F91; } 
 .social-media-item:nth-child(2) > .btn-link { color: #5CB7F6; } 
 .social-media-item:nth-child(3) > .btn-link { color: #82D42D; } 
+
+.btn.btn-link {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: transform 1s;
+         -o-transition: transform 1s;
+            transition: transform 1s;
+}
+
+.btn.btn-link:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
 
 .copyright-label {
     font-weight: 100;
