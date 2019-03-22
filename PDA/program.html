@@ -66,13 +66,14 @@
 
             <div class="program-schedule">
                 <h2 class="page-heading text-uppercase text-center">Program Schedule</h2>
-                <p class="pda-primary-text text-uppercase text-center schedule-range-label">May 11 - May 14, 2019</p>
+                <p class="pda-primary-text text-uppercase text-center schedule-range-label">May 13 - May 17, 2019</p>
 
                 <ul class="schedule-list">
-                    <li class="schedule-item">1</li>
-                    <li class="schedule-item">2</li>
-                    <li class="schedule-item">3</li>
-                    <li class="schedule-item">4</li>
+                    <li class="schedule-item" data-selected="may13">1</li>
+                    <li class="schedule-item" data-selected="may14">2</li>
+                    <li class="schedule-item" data-selected="may15">3</li>
+                    <li class="schedule-item" data-selected="may16">4</li>
+                    <li class="schedule-item" data-selected="may17">5</li>
                 </ul>
             </div>
 
@@ -84,287 +85,1362 @@
                                Select Schedule
                             </button>
                             <div class="dropdown-menu date-dropdown-menu" aria-labelledby="dateDropdownMenuButton">
-                                <a class="dropdown-item" href="#">May 15, 2019</a>
+                                <a class="dropdown-item" href="#" data-selected="may13">May 13, 2019</a>
+                                <a class="dropdown-item" href="#" data-selected="may14">May 14, 2019</a>
+                                <a class="dropdown-item" href="#" data-selected="may15">May 15, 2019</a>
+                                <a class="dropdown-item" href="#" data-selected="may16">May 16, 2019</a>
+                                <a class="dropdown-item" href="#" data-selected="may17">May 17, 2019</a>
                             </div>
                         </div>
                         <div class="dropdown room-dropdown">
                             <button class="btn dropdown-toggle border-bottom-0" type="button" id="roomDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                Select Room
                             </button>
-                            <div class="nav dropdown-menu" aria-labelledby="roomDropdownMenu">
-                                <a class="nav-link dropdown-nav-link active" id="home-tab" data-toggle="tab" href="#fr1" role="tab" aria-controls="fr1" aria-selected="true">Function Room 1</a>
-                                <a class="nav-link dropdown-nav-link" id="profile-tab" data-toggle="tab" href="#fr2n3" role="tab" aria-controls="fr2n3" aria-selected="false">Function Room 2 & 3</a>
-                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#fr4" role="tab" aria-controls="fr4" aria-selected="false">Function Room 4</a>
-                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#fr5" role="tab" aria-controls="fr5" aria-selected="false">Function Room 5</a>
-                                <a class="nav-link dropdown-nav-link" id="contact-tab" data-toggle="tab" href="#frothers" role="tab" aria-controls="frothers" aria-selected="false">Function Room 7, 8 & 9</a>
-                            </div>
+                            <div class="nav dropdown-menu room-dropdown-menu" aria-labelledby="roomDropdownMenu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);"></div>
                         </div>
                     </div>
 
-                    <div class="tab-content program-tab-content" id="myTabContent">
+                    
+                    <!-- May 13 Schedule -->
+                    <div class="tab-content program-tab-content d-none" id="may13-TabContent">
                         <!-- Function Room 1 -->
-                        <div class="tab-pane program-tab-pane fade show active" id="fr1" role="tabpanel" aria-labelledby="fr1-tab">
+                        <div class="tab-pane program-tab-pane fade show active" id="fr1-may13-tab" role="tabpanel" aria-labelledby="fr1-may13-tab">
                             <div class="speakers-schedule">
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-time flex-fill"></div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>The One Health Approach for AMS for Dentistry and the Proposed Research Agenda</p>
+                                        <p class="text-uppercase">Student Congress</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Maria Margarita Lota</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>Antibiotic Prescribing Patterns of Filipino Dentists</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Melchor Sarmiento</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Appropriate Use of Antimicrobials for Endodontic Cases</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Irene Porter</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Appropriate Use of Antimicrobials for Periodontic Cases</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Phides Alcorta</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The One Health Approach for AMS for Dentistry and the Proposed Research Agenda</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Maria Margarita Lota</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>Antibiotic Prescribing Patterns of Filipino Dentists</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Melchor Sarmiento</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Appropriate Use of Antimicrobials for Endodontic Cases</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Irene Porter</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Appropriate Use of Antimicrobials for Periodontic Cases</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Phides Alcorta</p>
+                                        <p>Dr. Ryan G. Tiongco</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Function Room 2 & 3 -->
-                        <div class="tab-pane program-tab-pane fade" id="fr2n3" role="tabpanel" aria-labelledby="fr2n3-tab">
+                        <div class="tab-pane program-tab-pane fade" id="fr2n3-may13-tab" role="tabpanel" aria-labelledby="fr2n3-may13-tab">
                             <div class="speakers-schedule">
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">8:00 AM - 9:30 AM</div>
+                                    <div class="schedule-time flex-fill"></div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Diagnosis and Management of Occlusal Discomfort</p>
+                                        <p class="text-uppercase">New Dentists Session</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Prof. Yoshizo Matsuka</p>
+                                        <p>Dr. Tristan Nathaniel Ramos</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">9:30 AM - 11:00 AM</div>
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Rehabilitation of Occlusion: Science or Art</p>
+                                        <p>"Tax Compliance Done Right!"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Prof. Kiyoshi Koyano</p>
+                                        <p>Marvin Galang, CPA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Clinical and Biological Parameters of Odontogenic Infections and its Management"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Jasper L. Tago, DDM</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
                                     <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Sleep Medicine,and Dentistry A Necessary Collaboration</p>
+                                        <p>"Workshop on Prescription Writing of Commonly Used Medications in Dentistry"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Agnes Remulla</p>
+                                        <p>Fina Lopez, DDM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Mobile Dental Photography"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Aaron Y. Lu, DMD, MScD</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
                                     <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Sleep Medicine,and Dentistry A Necessary Collaboration</p>
+                                        <p>"Tax Compliance Done Right!"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Agnes Remulla</p>
+                                        <p>Marvin Galang, CPA</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">2:30 PM - 4:00 PM</div>
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Diagnosis and Management of Occlusal Discomfort</p>
+                                        <p>"Clinical and Biological Parameters of Odontogenic Infections and its Management"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Prof. Yoshizo Matsuka</p>
+                                        <p>Baifatimah Gania, DMD</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">4:00 PM - 5:30 PM</div>
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Rehabilitation of Occlusion: Science or Art</p>
+                                        <p>"Workshop on Prescription Writing of Commonly Used Medications in Dentistry"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Prof. Kiyoshi Koyano</p>
+                                        <p>Fenella Isabel Piedad, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Mobile Dental Photography"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Aaron Y. Lu, DMD, MScD</p>
+                                    </div>
+                                </div>
+                            </div>
+                   
+                        </div>
+
+                       <!-- Function Room 4 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr4-may13-tab" role="tabpanel" aria-labelledby="fr4-may13-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Caries Risk Assessment for Oral Health in the Philippines: Boon or Bane?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maritess O. Villarico, DDM, MFLCD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Use of the International Caries Detection and Assessment System (ICDAS) Index in Clinical Teaching at the Faculty of Dentistry, University of Malaya"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ma. Angela G. Gonzalez, DDM, MPH, MSD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Success and Failures in Adhesive Restorations: Understanding the Material. The Bond and Application Techniques"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Michelle Sunico-Segarra, DDM, MOH, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Dentin-Pulp Regeneration Concept: How Can We Translate Into Clinical Practice"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Won-Jun Shon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Caries Risk Assessment for Oral Health in the Philippines: Boon or Bane?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maritess O. Villarico, DDM, MFLCD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Use of the International Caries Detection and Assessment System (ICDAS) Index in Clinical Teaching at the Faculty of Dentistry, University of Malaya"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ma. Angela G. Gonzalez, DDM, MPH, MSD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Success and Failures in Adhesive Restorations: Understanding the Material, The Bond and Application Techniques"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Michelle Sunico-Segarra, DDM, MOH, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Dentin-Pulp Regeneration Concept: How Can We Translate Into Clinical Practice"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Won-Jun Shon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 5 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr5-may13-tab" role="tabpanel" aria-labelledby="fr5-may13-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Detecting Medically Compromised Dental Patients"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ma. Cristina Lagaya-Estrada, DDM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Patient Optimization Prior to Surgery"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Bianca Abigail Cruz-Bolintiam, MD, MBA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Inside out: Exposing the power of Oral Maxillofacial Radiology"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Lordjie Marr Otamias Morilla, DMD, MScD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Dental Diagnostic Imaging: An Inside View in Modern Dentistry"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Anna Marie Miranda, DMD, MSc-OMS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Detecting Medically Compromised Dental Patients"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ma. Cristina Lagaya-Estrada, DDM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Patient Optimization Prior to Surgery"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Bianca Abigail Cruz-Bolintiam, MD, MBA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Inside out: Exposing the power of Oral Maxillofacial Radiology"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Lordjie Marr Otamias Morialla, DMD, MScD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Dental Diagnostic Imaging: An Inside View in Modern Dentistry"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Anna Marie Miranda, DMD, MSc-OMS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MR 7,8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr7n8n9-may13-tab" role="tabpanel" aria-labelledby="mr7n8n9-may13-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill"></div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase">Faculty Development</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Maria Lourdes H. Pacaldo</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:30 AM - 10:30 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase">"Engaging Minds in the Classroom"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Josefina Q. Era</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:30 AM - 12:30 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase">"Reflective Teaching: Exploring our own Classroom Practice"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Lourdes H. Pacaldo, DDM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase">Effective Teaching Strategies for the Current Classroom (Best Practices)</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Ma, Olivia E. Caling, MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- May 14 Schedule -->
+                    <div class="tab-content program-tab-content d-none" id="may14-TabContent">
+                        <!-- Function Room 1 -->
+                        <div class="tab-pane program-tab-pane fade show active" id="fr1-may14-tab" role="tabpanel" aria-labelledby="fr1-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase font-weight-bold">Opening Ceremonies</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill"></div>
+                                </div>
+
+                                <div class="speaker-schedule d-flex flex-wrap center-text">
+                                    <div class="flex-fill font-weight-bold text-uppercase">Health Financing</div>
+                                </div>
+
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Philippine HMO 101"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Aurora Gaerlan Dellosa, DMD, MPH, MHA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Rate Setting for HMO"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dean Mariano Maglutac, Jr., DDM, MHA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">12:00 NN - 1:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Integrating Health Financing in the Delivery of Dental Services. An Update on Philhealth Benefits"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Florentino Afable, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Philippine HMO 101"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Aurora Gaerlan, Dellosa DMD, MPH, MHA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Rate Setting for HMO"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dean Mariano Maglutac, Jr., DDM, MHA</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Integrating Health Financing in the Delivery of Dental Services. An Update on Philhealth Benefits"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Florentino Afable, DMD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 2 & 3 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr2n3-may14-tab" role="tabpanel" aria-labelledby="fr2n3-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p></p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p class="text-uppercase font-weight-bold">Opening Ceremonies</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Customized Digital Treatment to Correct Simple to Complex Malocclusions for Function & Aesthetics using Transparent Orthodontic Aligners"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Vincenzo D'Anto, DDS, MS, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">12:00 NN - 1:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"In your next extraction, do not throw away the tooth! Yes, even with caries!!!"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Dott Elio Minetti, DDS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Customized Digital Treatment to Correct Simple to Complex Malocclusions for Function & Aesthetics using Transparent Orthodontic Aligners"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Vincenzo D'Anto, DDS, MS, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"In your next extraction, do not throw away the tooth! Yes, even with caries!!!"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Dott Elio Minetti, DDS</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                        <!-- Function Room 4 -->
-                        <div class="tab-pane program-tab-pane fade" id="fr4" role="tabpanel" aria-labelledby="fr4-tab">
+                        <div class="tab-pane program-tab-pane fade" id="fr4-may14-tab" role="tabpanel" aria-labelledby="fr4-may14-tab">
                             <div class="speakers-schedule">
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Essential Guidelines for Porcelein Veneers</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Mylene Guevarra-Igrubay</p>
+                                        <p class="uppercase-text">Opening Ceremonies</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">9:00 AM - 11:00 AM</div>
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>The Cycle of tooth Preservation via stress-reduced direct composite restoration, A Biometric Approach</p>
+                                        <p>"Modern Concept and Technique of Non-Surgical Periodontal Theraphy"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Simone Deliperi</p>
+                                        <p>Junichi Ono, DDS</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
                                     <div class="schedule-time flex-fill">11:00 AM - 12:00 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Orthodontic Management Prior to Pre Prosthetic Implants</p>
+                                        <p>"Evidence-based Efficacy - Clinically Proven Fast Relief"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Martin Antonio V. Reyes</p>
+                                        <p>Anousheh Alavi, BDS, MSc, FDRCS</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                        <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
-                                        <div class="schedule-topic flex-fill">
-                                            <p>Essential Guidelines for Porcelein Veneers</p>
-                                        </div>
-                                        <div class="schedule-speaker flex-fill">
-                                            <p>Dr. Mylene Guevarra-Igrubay</p>
-                                        </div>
-                                    </div>
-                                    <div class="speaker-schedule d-flex flex-wrap">
-                                        <div class="schedule-time flex-fill">2:30 PM - 4:30 PM</div>
-                                        <div class="schedule-topic flex-fill">
-                                            <p>The Cycle of tooth Preservation via stress-reduced direct composite restoration, A Biometric Approach</p>
-                                        </div>
-                                        <div class="schedule-speaker flex-fill">
-                                            <p>Dr. Simone Deliperi</p>
-                                        </div>
-                                    </div>
-                                    <div class="speaker-schedule d-flex flex-wrap">
-                                        <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
-                                        <div class="schedule-topic flex-fill">
-                                            <p>Orthodontic Management Prior to Pre Prosthetic Implants</p>
-                                        </div>
-                                        <div class="schedule-speaker flex-fill">
-                                            <p>Dr. Martin Antonio V. Reyes</p>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <!-- Function Room 5 -->
-                        <div class="tab-pane program-tab-pane fade" id="fr5" role="tabpanel" aria-labelledby="fr5-tab">
-                            <div class="speakers-schedule">
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-time flex-fill">12:00 PM - 1:00 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>The Predictability Protocol for Root Resorption Prior to Bracket Bonding - What To Do?</p>
+                                        <p>"Latest Formulation Advancements and Visualization"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Daniel Ianni Filho (Ortho)</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>Retention, Relapse & Function</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Ethel Escultura</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">10:00 AM - 12:00 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Technological and Biomechanical Advances as Strategies in the Treatment of Skeletal Surgical Open Bite Treated Without Surgery</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Daniel Ianni Filho (Ortho)</p>
-                                    </div>
-                                </div>
-                                <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
-                                    <div class="schedule-topic flex-fill">
-                                        <p>The Predictability Protocol for Root Resorption Prior to Bracket Bonding - What To Do?</p>
-                                    </div>
-                                    <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Daniel Ianni Filho (Ortho)</p>
+                                        <p>Maria Teresa Addison, BDS, MSc, PhD</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
                                     <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>Retention, Relapse & Function</p>
+                                        <p>"Modern Concept and Technique of Non-Surgical Periodontal Therapy"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Ethel Escultura</p>
+                                        <p>Junichi Ono, DDS</p>
                                     </div>
                                 </div>
                                 <div class="speaker-schedule d-flex flex-wrap">
-                                    <div class="schedule-time flex-fill">3:30 PM - 5:30 PM</div>
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
                                     <div class="schedule-topic flex-fill">
-                                        <p>The Technological and Biomechanical Advances as Strategies in the Treatment of Skeletal Surgical Open Bite Treated Without Surgery</p>
+                                        <p>"Evidence-based Efficacy - Clinically Proven Fast Relief"</p>
                                     </div>
                                     <div class="schedule-speaker flex-fill">
-                                        <p>Dr. Daniel Ianni Filho (Ortho)</p>
+                                        <p>Anousheh Alavi, BDS, MSc, FDRCS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Latest Formulation Advancements and Visualization"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Teresa Addison, BDS, MSc, PhD</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="tab-pane program-tab-pane fade" id="frothers" role="tabpanel" aria-labelledby="frothers-tab">
+                        <!-- Function Room 5 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr5-may14-tab" role="tabpanel" aria-labelledby="fr5-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase">Opening Ceremonies</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Daniel Ianni Filho (Ortho)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 1:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"A Biomimetic Approach To Prosthodontic Planning, Treatment and Ceramic System Selection."</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>John A. Sorensen DMD, PhD, FACP</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"A Biomimetic Approach To Prosthodontic Planning, Treatment and Ceramic System Selection."</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>John A. Sorensen DMD, PhD, FACP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 7, 8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="frothers-may14-tab" role="tabpanel" aria-labelledby="frothers-may14-tab">
     
                         </div>
+
+                        <!-- MR 7,8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr7n8n9-may14-tab" role="tabpanel" aria-labelledby="mr7n8n9-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="uppercase-text">Opening Ceremonies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- R11 -->
+                        <div class="tab-pane program-tab-pane fade" id="r11-may14-tab" role="tabpanel" aria-labelledby="r11-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">12:30 PM - 1:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>THE UBE "The Ultimate Bonding Experience"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Kimberly Ray Fajardo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- R13 -->
+                        <div class="tab-pane program-tab-pane fade" id="r13-may14-tab" role="tabpanel" aria-labelledby="r13-may14-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">12:30 PM - 1:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Early treatment of Skeletal Malocclusions - Interceptive Strategies for General Practitioners</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Martin Antonio V. Reyes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+
+                    <!-- May 15 Schedule -->
+                    <div class="tab-content program-tab-content d-none" id="may15-TabContent">
+                        <!-- Function Room 1 -->
+                        <div class="tab-pane program-tab-pane fade show active" id="fr1-may15-tab" role="tabpanel" aria-labelledby="fr1-may15-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antibiotic Surveillance: Antimicrobial Stewardship"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Margarita M. Lota MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Antibiotic Prescribing Practices of Filipino Dentists</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Melchor Sarmiento, DMD, MPH</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antimicrobial Stewardship in Endodontics"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Irene Grace Porter, DDM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 NN</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antibiotics in Periodontal Treatment: When are they needed?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Phides Alcorta, DDM, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antibiotic Surveillance: Antimicrobial Stewardship"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Margarita M. Lota MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antibiotic Prescribing Practices of Filipino Dentists"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Melchor Sarmiento, DMD, MPH</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antimicrobial Stewardship in Endodontics"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Irene Porter, DMD, MS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Antibiotics in Periodontal Treatment: When are they needed?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Phides Alcorta, DDM, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 2 & 3 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr2n3-may15-tab" role="tabpanel" aria-labelledby="fr2n3-may15-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:30 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Diagnosis and Management of Occlusal Discomfort"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Yoshizo Matsuka, DDS. PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:30 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Rehabilitation of Occlusion: Science or Art"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Kiyoshi Koyano, DDS, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00AM - 12:00 NN</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Sleep Medicine, and Dentistry A Necessary Collaboration"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Agnes Remulla MD, FPSO-HNS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Sleep Medicine, and Dentistry A Necessary Collaboration"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Agnes Remulla MD, FPSO-HNS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 4:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Diagnosis and Management of Occlusal Discomfort"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Yoshizo Matsuka, DDS. PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:00 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Rehabilitation of Occlusion: Science or Art"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Kiyoshi Koyano, DDS, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Function Room 4 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr4-may15-tab" role="tabpanel" aria-labelledby="fr4-may15-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Essential Guidelines for Porcelein Veneers"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mylene Guevarra-Igrubay, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 11:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Ortho Space Management prior to pre prosthetic rehabilitation"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Martin Antonio V. Reyes, DDM, MSD, FAPO</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Cycle of tooth Preservation via stress-reduced direct composite restoration, A Biometric Approach"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Simone Deliperi (Denstply)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Essential Guidelines for Porcelein Veneers"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mylene Guevarra-Igrubay, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Ortho Space Management prior to pre prosthetic rehabilitation"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Martin Antonio V. Reyes, DDM, MSD, FAPO</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Simone Deliperi (Denstply)"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>The Cycle of tooth Preservation via stress-reduced direct composite restoration, A Biometric Approach</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 5 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr5-may15-tab" role="tabpanel" aria-labelledby="fr5-may15-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Predictability Protocol for Root Resorption Prior to Bracket Bonding - What To Do?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Daniel Iani Filho, DDS, MSD, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Retention, Relapse & Function"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ethel Escultura, DDM, MS (Ortho)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Technological and Biomechanical Advances as Strategies in the Treatment of Skeletal Surgical Open Bite Treated Without Surgery"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Daniel Iani Filho, DDS, MSD, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Predictability Protocol for Root Resorption Prior to Bracket Bonding - What To Do?"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Daniel Iani Filho, DDS, MSD, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Retention, Relapse & Function"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Ethel Escultura, DDM, MS (Ortho)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Technological and Biomechanical Advances as Strategies in the Treatment of Skeletal Surgical Open Bite Treated Without Surgery"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Daniel Iani Filho, DDS, MSD, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 7, 8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="frothers-may15-tab" role="tabpanel" aria-labelledby="frothers-may15-tab">
+    
+                        </div>
+
+                        <!-- MR 2 & 3 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr2n3-may15-tab" role="tabpanel" aria-labelledby="mr2n3-may15-tab">
+    
+                        </div>
+
+                        <!-- MR 7,8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr7n8n9-may15-tab" role="tabpanel" aria-labelledby="mr7n8n9-may15-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill">Specialist Training Programs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- May 16 Schedule -->
+                    <div class="tab-content program-tab-content d-none" id="may16-TabContent">
+                        <!-- Function Room 1, 2 & 3 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr2n3-may16-tab" role="tabpanel" aria-labelledby="fr2n3-may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill text-uppercase font-weight-bold">
+                                        Treatment directions for the periodontically compromised patient
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Survival or Success? Promoting the greatest longevity and health of dentition from a periodontal view point"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Hwey-Chin Yeh, DDS, MS.</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM -12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Treatment Plan: From Periodontitis to Peri-lmplantitis"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Jae-Yoon Kim, DDS, PhD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Survival or Success? Promoting the greatest longevity and health of dentition from a periodontal view point"(accommodations & Airfare)</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Hwey-Chin Yeh, DDS, MS.</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 5:30 PM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Treatment Plan: From Periodontitis to Peri-I mp lantitis"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Jae-Yoon Kim, DDS, PhD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Function Room 4 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr4-may16-tab" role="tabpanel" aria-labelledby="fr4-may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                   <div class="flex-fill text-uppercase font-weight-bold">
+                                        Dental Management for the Special needs Patient 
+                                   </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>13 Reasons Why: A Multi-Level Approach on the Oral Health Care of Children with Autism</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Manuel Vallesteros, DOM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Video Presentation</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11 :00 AM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Red Flag Signs in Children</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Marcelino G. Reysio-Cruz, Ill MD, DPPS, FPSDBP</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:00 AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Creating Advocates for Mental Health of the Filipino Youth</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Francis Dimalanta, MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1 :30 PM - 2:30 PM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>13 Reasons Why: A Multi-Level Approach on the Oral Health Care of Children with Autism</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Manuel Vallesteros, DOM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM -3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Video Presentation</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Red Flag Signs in Children</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Marcelino G. Reysio-Cruz, Ill MD, DPPS, FPSDBP</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM -5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Creating Advoeates for Mental Health of the Filipino Youth</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Francis Dimalanta, MD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 5 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr5-may16-tab" role="tabpanel" aria-labelledby="fr5-may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Lab Me Like You Do.... Resin Crowns That You Can Do"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Adrian Carlos Manaloto, DMD, MS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Zirconla Ceramic Implants"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Sammy Noumbissi, DOM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11:00 PM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Gerodontology - Improving Oral Health of Our Older Community</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Jacob John, BOS, MOS (Pros)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:OO AM - 12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>Evolution of All Ceramic Restorations</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. V Rangarajan, MOS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Lab Me Like You Do.... Resin Crowns That You Can Do"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Adrian Carlos Manaloto, DMD, MS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Zlrconla Ceramic Implants"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Sammy Noumbissi, DOM</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Gerodontology -Improving Oral Health of Our Older Community"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. Jacob John, BOS, MOS (Pros)</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM -5 :3.0 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Evolution of All Ceramic Restorations"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Prof. V Rangarajan, MOS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MR1 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr1-may16-tab" role="tabpanel" aria-labelledby="mr1-may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">
+                                        <span>9:00 AM - 11:00 AM</span>
+                                        <span>2:30 PM - 4:30 PM</span>
+                                    </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p class="text-uppercase font-weight-bold">Forum on campaign against illegal practice of dentistry</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MR 2&3 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr2n3-may16-tab" role="tabpanel" aria-labelledby="mr2n3-may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill font-weight-bold">E POSTER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MR 7, 8 & 9 -->
+                        <div class="tab-pane program-tab-pane fade" id="mr7n8n9-may16-tab" role="tabpanel" aria-labelledby="mr7n8n9may16-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill font-weight-bold">Specialist Training Programs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- May 17 Schedule -->
+                    <div class="tab-content program-tab-content d-none" id="may17-TabContent">
+                        <!-- Function Room 1 -->
+                        <div class="tab-pane program-tab-pane fade show active" id="fr1-may17-tab" role="tabpanel" aria-labelledby="fr1-may17-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill">
+                                        DENR - PCO c/o Steve 1 hour
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 2 & 3 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr2n3-may17-tab" role="tabpanel" aria-labelledby="fr2n3-may17-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill"></div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>ENDODONTICS</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Dr. Veluz</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM -9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Keys to Achieving a successful Root Canal Treatment"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Cristina F. Morales, DOM, MOS, MRD, RCS Ed</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM -12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Tactic and Strategy in Endodontics"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Marino Sutedjo, BOS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1 :30 PM -2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Keys to Achieving a successful Root Canal Treatment"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Maria Cristina F. Morales, DOM, MOS, MRD, RCS Ed</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM -5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Tactic and Strategy in Endodontics"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Marino Sutedjo, BOS </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Function Room 4 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr4-may17-tab" role="tabpanel" aria-labelledby="fr4-may17-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="flex-fill font-weight-bold">ORAL MEDICINE</div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Periodontitis and Adverse Pregnancy Outcomes"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Waranuch PitiPhat, DDS, MPHM, MS, ScD, FRCDS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Endocrine Diseases and Oral Health"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Michael Villa, MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11 :00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Alarming Rise of HIV and the Need for Oral Health Care Awareness"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Gelza Zabat, MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11 :00 AM -12:00 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Oral Cancer and Nutrition"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Romullo de Villa , MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Oral Cancer and Nutrition"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Romullo de Villa , MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM - 3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Endocrine Diseases and Oral Health"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Michael Villa, MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM - 4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"The Alarming Rise of HIV and the Need for Oral Health Care Awareness"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Gelza Zabat, MD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM - 5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Periodontitis and Adverse Pregnancy Outcomes"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Waranuch PitiPhat, DDS, MPHM, MS, ScD, FRCDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Function Room 5 -->
+                        <div class="tab-pane program-tab-pane fade" id="fr5-may17-tab" role="tabpanel" aria-labelledby="fr5-may17-tab">
+                            <div class="speakers-schedule">
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">8:00 AM - 9:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Management of Maxilla-Mandibular Fractures Principles and Updates"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mendelssohn Manalaysay, DMD, MScHSE</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">9:00 AM - 10:00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Conservative Management of Ameloblastoma Using Radical & Modifi_ed Marsupialization"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mario E. Esquillo, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">10:00 AM - 11 :00 AM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Associated Pathological Consideration of Impacted Tooth: A Cavleat for Dental Practitioners"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Eliezer Blanes, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">11:00 AM - 12:00 PM </div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Difficulties in Diagnosis: Cases of Unusual/Uncommon Pathologies and their Management''</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Jay Hansel Tabije, DMD, MS</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">1:30 PM - 2:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Management of Maxilla-Mandibular Fractures Principles and Updates"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mendelssohn Manalaysay, DMD, MScHSE</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">2:30 PM -3:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Conservative Management of Ameloblastoma Using Radical & Modifi_ed Marsupialization"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Mario E. Esquillo, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">3:30 PM -4:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Associated Pathological Consideration of Impacted Tooth: A Cavleat for Dental Practitioners"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Eliezer Blanes, DMD</p>
+                                    </div>
+                                </div>
+                                <div class="speaker-schedule d-flex flex-wrap">
+                                    <div class="schedule-time flex-fill">4:30 PM -5:30 PM</div>
+                                    <div class="schedule-topic flex-fill">
+                                        <p>"Difficulties in Diagnosis: Cases of Unusual/Uncommon Pathologies and their Management"</p>
+                                    </div>
+                                    <div class="schedule-speaker flex-fill">
+                                        <p>Jay Hansel Tablje, DMD, MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
