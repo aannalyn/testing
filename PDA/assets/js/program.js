@@ -50,7 +50,8 @@ $(document).ready(function() {
                 { id: "fr2n3", href: "#fr2n3", ac: "fr2n3", as: "false", label: "Function Room 2 & 3" },
                 { id: "fr4", href: "#fr4", ac: "fr4", as: "false", label: "Function Room 4" },
                 { id: "fr5", href: "#fr5", ac: "fr5", as: "false", label: "Function Room 5" },
-                { id: "mr7n8n9", href: "#mr7n8n9", ac: "mr7n8n9", as: "false", label: "MR 7,8 & 9" }
+                { id: "mr7n8n9", href: "#mr7n8n9", ac: "mr7n8n9", as: "false", label: "MR 7,8 & 9" },
+                { id: "r11", href: "#r11", ac: "r11", as: "false", label: "R 11" }
             ];
         } else if (dateSelected == 'may16') {
             elementData = [
@@ -59,7 +60,8 @@ $(document).ready(function() {
                 { id: "fr5", href: "#fr5", ac: "fr5", as: "false", label: "Function Room 5" },
                 { id: "mr1", href: "#mr1", ac: "mr1", as: "false", label: "MR 1" },
                 { id: "mr2n3", href: "#mr2n3", ac: "mr2n3", as: "false", label: "MR 2&3" },
-                { id: "mr7n8n9", href: "#mr7n8n9", ac: "mr7n8n9", as: "false", label: "MR 7,8 & 9" }
+                { id: "mr7n8n9", href: "#mr7n8n9", ac: "mr7n8n9", as: "false", label: "MR 7,8 & 9" },
+                { id: "r13", href: "#r13", ac: "r13", as: "false", label: "R 13" }
             ];
         } else if (dateSelected == 'may17') {
             elementData = [
