@@ -1,22 +1,22 @@
 $(document).ready(function() {
-    $('.lbs-product-slider.owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3500,
-        nav: false,
+    $('.lbs-product-slider').slick({
         dots: true,
-        responsiveClass: true,
-        animateOut: 'fadeOut'
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false      
     });
 
-    $('.lbs-companies.owl-carousel').owlCarousel({
-        padding: 10,
-        center:true,
-        loop: true,
-        autoWidth:true,
+    $('.lbs-companies').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToScroll: 1,
         autoplay: true,
-        autoplayTimeout: 2000,
-        nav: false
+        autoplaySpeed: 2000,
+        variableWidth: true            
     });
 });

@@ -98,10 +98,28 @@ header.fixed-top .navbar.lbs-main-navbar {
     border-top: 1px solid #90C23E;
 }
 
+header.fixed-top .nav-link.lbs-main-nav-link.active {
+    color: #FFFFFF;
+    border-top: none;
+    font-size: 1.3rem;
+}
+
 .navbar-brand img {
     width: 200px;
     height: auto;
 }
+
+.lbs-main-nav-item:nth-child(1) { order: 0; }
+.lbs-main-nav-item:nth-child(2) { order: 1; }
+.lbs-main-nav-item:nth-child(3) { order: 2; }
+.lbs-main-nav-item:nth-child(4) { 
+    order: 3; 
+    margin-right: auto;
+    margin-left: auto;
+}
+.lbs-main-nav-item:nth-child(5) { order: 4; }
+.lbs-main-nav-item:nth-child(6) { order: 5; }
+.lbs-main-nav-item:nth-child(7) { order: 6; }
 
 /* Layout */
 .lbs-page {

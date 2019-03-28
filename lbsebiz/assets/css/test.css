@@ -1,0 +1,116 @@
+
+/* Reset */
+body {
+    font-family: Oswald;
+    color: #848484;
+}
+
+
+
+/* Helpers */
+.btn-outline-white {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.text-gray { color:#848484; }
+.text-light-green { color: #90C23E; }
+.text-light-orange { color: #F78E1E; }
+
+/* Icons */
+.lbs-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.lbs-icon-fb { background-image: url('../images/global/icons/fb.svg'); }
+.lbs-icon-twitter { background-image: url('../images/global/icons/twitter.svg'); }
+.lbs-icon-email { background-image: url('../images/global/icons/globe.svg'); }
+
+
+/* Buttons */
+.btn.btn-outline-white:hover {
+    background-color: #FFFFFF;
+}
+
+.btn-light-orange {
+    color: #fff;
+    background-color: #F78E1E;
+    border-color: #F78E1E;
+}
+    .btn-light-orange:hover {
+        color: #fff;
+        background-color: #ec8210;
+        border-color: #ec8210;
+    }
+
+.btn-link-light-green {
+    color: #90C23E;
+}
+    .btn-link-light-green:hover {
+        color: #749c31;
+    }
+
+
+
+
+/* Layout */
+.lbs-page {
+    padding-top: 87px;
+}
+
+/* Section */
+.lbs-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 87px);
+    min-height: calc(100vh - 87px);
+    padding: 4rem 0 2rem;
+}
+
+.lbs-section-heading {
+    color: #9E3178;
+}
+
+.lbs-section-label {
+    color: #848484;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+.lbs-parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lbs-bg {
+    background: url('../images/pages/test/img_background.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.lbs-parallax-content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+
