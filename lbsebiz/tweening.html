@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>GSAP</title>
+    
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #262626;
+            font-family: 'Open Sans', sans-serif;
+            overflow: hidden;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: #88ce02;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .boxSmall {
+            width: 25px;
+            height: 75px;
+            background-color: #70a40b;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .boxTiny {
+            height: 50px;
+            background-color: #577a14;
+            bottom: 0;
+            right: 0;
+            left: auto;
+            z-index: 3;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <div id="box">
+        <div class="boxSmall"></div>
+        <div class="boxSmall boxTiny"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+    <script src="./assets/vendors/greensock-js/src/minified/plugins/CSSPlugin.min.js"></script>
+    <script src="./assets/vendors/greensock-js/src/minified/easing/EasePack.min.js"></script>
+    <script src="./assets/vendors/greensock-js/src/minified/TweenLite.min.js"></script>
+
+
+    <script src="./assets/vendors/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="./assets//vendors/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+    <script src="./assets//vendors/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+
+
+    <script>
+
+    </script>
+</body>
+</html>
