@@ -1,23 +1,4 @@
 $(document).ready(function() {
-    $('.room-dropdown-menu').delegate('a', 'click', function() {
-        $(this).parent().parent().find('button.dropdown-toggle').html($(this).text());
-    });
-
-    $('.schedule-list').delegate('.schedule-item', 'click', function() {
-        $(this).parent().addClass('d-none');
-        $('.program-result-wrapper').removeClass('d-none');
-
-        selectProgram($(this));
-
-        $('.date-dropdown-menu a[data-selected="'+$(this).attr('data-selected')+'"]').trigger('click');
-        $('.room-dropdown-menu a:first-of-type').trigger('click');
-    });
-
-    $('.date-dropdown-menu').delegate('a', 'click', function() {
-        $(this).parent().parent().find('button.dropdown-toggle').html($(this).text());
-        selectProgram($(this));
-    });
-
 
     function selectProgram(elem) {
         var dateSelected = elem.attr('data-selected');
@@ -80,4 +61,52 @@ $(document).ready(function() {
 
         $('.room-dropdown-menu').empty().html(el);
     }
+
+    $('.room-dropdown-menu').delegate('a', 'click', function() {
+        $(this).parent().parent().find('button.dropdown-toggle').html($(this).text());
+    });
+
+    $('.schedule-list').delegate('.schedule-item', 'click', function() {
+        $(this).parent().addClass('d-none');
+        $('.program-result-wrapper').removeClass('d-none');
+
+        selectProgram($(this));
+
+        $('.date-dropdown-menu a[data-selected="'+$(this).attr('data-selected')+'"]').trigger('click');
+        $('.room-dropdown-menu a:first-of-type').trigger('click');
+    });
+
+    $('.date-dropdown-menu').delegate('a', 'click', function() {
+        $(this).parent().parent().find('button.dropdown-toggle').html($(this).text());
+        selectProgram($(this));
+    });
+
+
+
+    var speakersArr = [];
+    $.getJSON( "assets/data/speakers.json", function( data ) { speakersArr = data; });
+
+    $('#speakersModal').on('show.bs.modal', function (event) {
+        var speakerKey = $(event.relatedTarget).attr('data-key');
+        var modal = $(this);
+
+        if (speakerKey) {  
+            modal.find('.pda-photo').attr('src', './assets/images/pages/speakers/'+speakersArr[speakerKey].photo+'.png');
+            modal.find('.pda-speaker').html('<h4>'+speakersArr[speakerKey].fname+' '+speakersArr[speakerKey].lname+ '</h4>'+speakersArr[speakerKey].labelled);
+            modal.find('.pda-achievements').html(speakersArr[speakerKey].achievements);
+            modal.find('.pda-date').text('Presentation Date: ' + speakersArr[speakerKey].presentationDate);
+            modal.find('.pda-venue').text('Venue: ' + speakersArr[speakerKey].venue);
+            modal.find('.pda-presentation-title').text('Presentation Title: ' + speakersArr[speakerKey].presentationTitle);
+            modal.find('.pda-presentation-content').html(speakersArr[speakerKey].presentationContent);
+        } else {
+            modal.find('.pda-photo').attr('src', 'http://via.placeholder.com/84?text=photo');
+            modal.find('.pda-speaker').html('');
+            modal.find('.pda-achievements').html('');
+            modal.find('.pda-date').text('Presentation Date: ');
+            modal.find('.pda-venue').text('Venue: ');
+            modal.find('.pda-presentation-title').text('Presentation Title: ');
+            modal.find('.pda-presentation-content').html('');
+        }
+
+    });
 }); 

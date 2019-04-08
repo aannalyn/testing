@@ -28,7 +28,7 @@
     text-align: center;
     color: #1FADAB;
     font-family: Oswald;
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-weight: bold;
     margin: 1rem;
 }
@@ -102,6 +102,10 @@
 
 .speaker-schedule p {
     margin: 0;
+    color: #7F7F7F;
+}
+
+.speaker-schedule a {
     color: #7F7F7F;
 }
 
